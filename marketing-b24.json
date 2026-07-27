@@ -1,10 +1,112 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-07-27T15:29:55.619Z",
   "source": "Bitrix24",
-  "totalLeads": 0,
+  "totalLeads": 191,
   "channels": [
-    {"key": "influencer", "weeks": []},
-    {"key": "direct", "weeks": []},
-    {"key": "other", "weeks": []}
+    {
+      "key": "influencer",
+      "weeks": [
+        {
+          "leads": 3,
+          "bad": 1,
+          "sales": 0
+        },
+        {
+          "leads": 1,
+          "bad": 1,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        }
+      ]
+    },
+    {
+      "key": "direct",
+      "weeks": [
+        {
+          "leads": 11,
+          "bad": 3,
+          "sales": 0
+        },
+        {
+          "leads": 1,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        }
+      ]
+    },
+    {
+      "key": "other",
+      "weeks": [
+        {
+          "leads": 135,
+          "bad": 36,
+          "sales": 15
+        },
+        {
+          "leads": 40,
+          "bad": 5,
+          "sales": 1
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        },
+        {
+          "leads": 0,
+          "bad": 0,
+          "sales": 0
+        }
+      ]
+    }
   ]
 }
