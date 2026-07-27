@@ -189,7 +189,7 @@ async function syncFromB24(){
  const btn=document.getElementById('syncB24'),state=document.getElementById('syncState');if(!btn||!state)return;
  btn.disabled=true;state.textContent='загружаю данные Б24…';
  try{
-  const response=await fetch('/api/marketing-b24',{cache:'no-store'});if(!response.ok)throw new Error('sync');
+  const response=await fetch(`./marketing-b24.json?t=${Date.now()}`,{cache:'no-store'});if(!response.ok)throw new Error('sync');
   const data=await response.json();
   (data.channels||[]).forEach((channel,ci)=>{(channel.weeks||[]).forEach((w,pi)=>{['leads','bad','sales'].forEach(c=>{weekFacts[wkey(pi,ci,c)]=Math.max(0,Number(w[c])||0)})})});
   localStorage.setItem(weekKey,JSON.stringify(weekFacts));state.textContent=`обновлено из Б24: ${new Date(data.updatedAt).toLocaleString('ru-RU')}`;renderAll()

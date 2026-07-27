@@ -1,0 +1,10 @@
+{
+  "updatedAt": null,
+  "source": "Bitrix24",
+  "totalLeads": 0,
+  "channels": [
+    {"key": "influencer", "weeks": []},
+    {"key": "direct", "weeks": []},
+    {"key": "other", "weeks": []}
+  ]
+}
