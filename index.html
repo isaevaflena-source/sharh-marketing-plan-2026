@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHARH · Управляемый план маркетинга до 3 800</title>
+<style>
+:root{--ink:#182033;--muted:#687086;--line:#e4e7ef;--navy:#201a4b;--brand:#5b4ce2;--green:#157347;--greenbg:#eaf7f0;--amber:#9a5700;--amberbg:#fff4df;--red:#b3261e;--redbg:#fff0ef;--bluebg:#f0f4ff}
+*{box-sizing:border-box}body{margin:0;background:#f5f6fa;color:var(--ink);font:14px/1.45 Arial,sans-serif}.doc{max-width:1380px;margin:auto;background:#fff;min-height:100vh}.head{padding:28px 34px;background:var(--navy);color:#fff}.tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#cfc9ff}.head h1{margin:6px 0 4px;font-size:29px}.head p{margin:0;color:#d8d5ee}.sec{padding:26px 34px;border-bottom:1px solid var(--line)}h2{margin:0 0 6px;font-size:21px}.desc{margin:0 0 15px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(8,1fr);gap:9px}.card{padding:13px;border:1px solid var(--line);border-radius:11px;background:#fff}.card b{display:block;font-size:21px;color:var(--brand)}.card span{font-size:11px;color:var(--muted)}.table{overflow:auto;border:1px solid var(--line);border-radius:11px}.daily-wrap{max-height:740px}.daily-wrap thead{position:sticky;top:0;z-index:3}table{width:100%;border-collapse:collapse}th{padding:10px;background:var(--navy);color:#fff;text-align:left;font-size:11px;white-space:nowrap}td{padding:9px;border-top:1px solid var(--line);white-space:nowrap;vertical-align:top}.total td{background:var(--navy);color:#fff;font-weight:700}.period-total td,.day-total td{background:#f1efff;font-weight:700}.direct td{background:var(--bluebg)}.danger td{background:var(--redbg)}.fact{width:76px;padding:7px;border:1px solid #c8cedd;border-radius:7px;background:#fff}.week-fact{width:78px;padding:7px;border:1px solid #c8cedd;border-radius:7px;background:#fff}.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}.control{display:flex;flex-direction:column;gap:4px}.control label{font-size:11px;color:var(--muted);font-weight:700}.control select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}.alert{margin-top:13px;padding:13px 15px;border-radius:10px;border-left:4px solid}.alert b{display:block}.green{background:var(--greenbg);border-color:var(--green);color:var(--green)}.amber{background:var(--amberbg);border-color:#e49a31;color:var(--amber)}.red{background:var(--redbg);border-color:var(--red);color:var(--red)}.blue{background:var(--bluebg);border-color:var(--brand);color:#32276f}.good{color:var(--green);font-weight:700}.warn{color:var(--amber);font-weight:700}.bad{color:var(--red);font-weight:700}.neutral{color:var(--muted)}.progress{height:7px;background:#eceef4;border-radius:8px;overflow:hidden;min-width:90px}.progress i{display:block;height:100%;background:var(--brand)}.legend{font-size:12px;color:var(--muted);margin-top:8px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.box{border:1px solid var(--line);border-radius:11px;padding:14px}.box b{display:block;margin-bottom:3px}.check td{white-space:normal;vertical-align:middle}.check input{width:18px;height:18px}.foot{margin:26px 34px;padding:18px;border-radius:12px;background:var(--navy);color:#fff}@media(max-width:1050px){.cards{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.cards,.grid{grid-template-columns:1fr 1fr}.sec,.head{padding:22px 18px}}@media(max-width:480px){.cards,.grid{grid-template-columns:1fr}}@media print{body{background:#fff}.doc{max-width:none}.daily-wrap{max-height:none;overflow:visible}.controls{display:none}}
+.nav{position:sticky;top:0;z-index:20;display:flex;gap:7px;align-items:center;padding:10px 34px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);overflow:auto;backdrop-filter:blur(8px)}.nav a,.nav button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;color:var(--ink);font-weight:700;font-size:12px;white-space:nowrap;text-decoration:none;cursor:pointer}.nav a:hover,.nav button:hover{border-color:var(--brand);color:var(--brand)}.nav .primary{background:var(--brand);border-color:var(--brand);color:#fff}.command{background:linear-gradient(180deg,#f7f5ff 0,#fff 100%)}.command-top{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:14px}.command-top p{margin:3px 0 0;color:var(--muted)}.mode-pill{padding:7px 10px;border-radius:999px;background:var(--greenbg);color:var(--green);font-weight:700;font-size:12px}.sprint-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.sprint-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;box-shadow:0 7px 24px rgba(40,31,96,.06)}.sprint-card.active{border:2px solid var(--brand);box-shadow:0 8px 28px rgba(91,76,226,.15)}.sprint-card .sprint-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.sprint-card h3{margin:0;font-size:16px}.sprint-card .date{font-size:11px;color:var(--muted)}.sprint-main{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.metric{padding:9px;border-radius:9px;background:#f7f8fb}.metric b{display:block;font-size:18px}.metric span{font-size:10px;color:var(--muted)}.split{display:flex;height:8px;border-radius:8px;overflow:hidden;background:#eee;margin:8px 0}.split i:nth-child(1){background:#8b5cf6}.split i:nth-child(2){background:#38bdf8}.split i:nth-child(3){background:#94a3b8}.channel-line{display:flex;justify-content:space-between;gap:10px;font-size:12px}.efficiency{margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}.eff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}.eff-grid span{padding:6px;border-radius:7px;background:#f7f8fb;font-size:10px;color:var(--muted)}.eff-grid b{display:block;font-size:13px;color:var(--ink)}.sync-state{margin-left:auto;font-size:11px;color:var(--muted);white-space:nowrap}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.action-card{padding:14px;border-radius:12px;border:1px solid var(--line);background:#fff}.action-card b{display:block;margin-bottom:5px}.action-card ul{margin:7px 0 0;padding-left:18px;color:var(--muted)}.section-toggle{float:right;border:0;background:#f1efff;color:var(--brand);padding:6px 9px;border-radius:8px;font-weight:700;cursor:pointer}.sec.is-collapsed>:not(h2){display:none}.compact-mode .secondary{display:none}.compact-mode .foot{display:none}@media(max-width:900px){.sprint-cards{grid-template-columns:1fr 1fr}.actions{grid-template-columns:1fr}.nav{padding:9px 18px}}@media(max-width:560px){.sprint-cards{grid-template-columns:1fr}.sprint-main{grid-template-columns:1fr 1fr}.command-top{display:block}.mode-pill{display:inline-block;margin-top:8px}.eff-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body><main class="doc">
+<header class="head">
+<div class="tag">SHARH · отдельный план маркетинга</div>
+<h1>Маркетинговый план до 3 800 учеников</h1>
+<p>План → факт → качество → отклонение → автоматический перенос на следующий день и спринт</p>
+</header>
+
+<nav class="nav">
+<a class="primary" href="#commandCenter">Штаб</a>
+<a href="#sprintsSection">Спринты</a>
+<a href="#dailySection">План на день</a>
+<a href="#channelsSection">Каналы</a>
+<a href="#factsSection">Фактическая база</a>
+<button class="primary" id="syncB24" type="button">Обновить из Б24</button>
+<span class="sync-state" id="syncState">данные Б24 ещё не загружены</span>
+<button id="viewMode" type="button">Показать весь документ</button>
+</nav>
+
+<section class="sec command" id="commandCenter">
+<div class="command-top">
+<div><h2>Операционный штаб маркетинга</h2><p>Один экран для решения: сколько лидов нужно, откуда они придут и какой бюджет открывать.</p></div>
+<span class="mode-pill">CPL Директа фиксирован: 700 ₽</span>
+</div>
+<div class="sprint-cards" id="sprintCards"></div>
+<div class="actions">
+<div class="action-card"><b>Яндекс Директ · разгон объёма</b><ul><li>Увеличивать только количество лидов: 20 → 45 → 100 → 220 → 400 → 600.</li><li>Недельный бюджет = лиды × 700 ₽.</li><li>Не открывать следующий объём при некачественных выше 40%.</li></ul></div>
+<div class="action-card"><b>Инфлюенс · рост заявок и снижение цены</b><ul><li>Каждому блогеру — отдельная кампания «никнейм + месяц + год».</li><li>Сравнивать стоимость лида и некач через 48 часов после размещения.</li><li>Повторять только связки с подтверждённым качеством в Б24.</li></ul></div>
+</div>
+</section>
+
+<section class="sec">
+<h2>Общий итоговый план маркетинга</h2>
+<p class="desc">Маркетинг обеспечивает 1 850 новых продаж. 820 старых продаж относятся к бесплатной реактивации ОП и в рекламный результат не включаются.</p>
+<div class="cards">
+<div class="card"><b>1 850</b><span>новых продаж</span></div>
+<div class="card"><b>6 735</b><span>валовых лидов</span></div>
+<div class="card"><b>3 126 425 ₽</b><span>базовый бюджет</span></div>
+<div class="card"><b>9,6% → 35%</b><span>рост конверсии</span></div>
+<div class="card"><b id="factLeads">0</b><span>лидов факт</span></div>
+<div class="card"><b id="factSales">0</b><span>продаж факт</span></div>
+<div class="card"><b id="factSpend">0 ₽</b><span>расход факт</span></div>
+<div class="card"><b id="remainLeads">6 735</b><span>лидов осталось</span></div>
+</div>
+<div class="cards" style="margin-top:9px">
+<div class="card"><b id="remainSales">1 850</b><span>продаж осталось</span></div>
+<div class="card"><b id="remainBudget">3 126 425 ₽</b><span>бюджет остался</span></div>
+<div class="card"><b id="nextDayLeads">—</b><span>лидов ближайшего дня</span></div>
+<div class="card"><b id="nextDayBudget">—</b><span>бюджет ближайшего дня</span></div>
+<div class="card"><b id="nextDayDate">—</b><span>ближайшая дата</span></div>
+<div class="card"><b>40% → 26%</b><span>некачественные</span></div>
+<div class="card"><b>40%</b><span>жёсткий максимум некача</span></div>
+<div class="card"><b>2 дня</b><span>цикл покупки</span></div>
+</div>
+<div class="alert blue"><b>Граница маркетингового плана</b>Лиды для цели 1 сентября принимаются до 29.08 включительно. Поток 30–31.08 относится к сентябрьским продажам и не должен маскировать недовыполнение плана 3 800.</div>
+</section>
+
+<section class="sec">
+<h2>Фактическая база пересчёта · Б24 и Яндекс Директ</h2>
+<div class="grid">
+<div class="box"><b>1 760 лидов в Б24</b>Создано 01–27.07.2026. Это контрольная база объёма до сезонного ускорения.</div>
+<div class="box"><b>Сайт: 110 лидов · 38,2% некач.</b>Недельная кривая: 26 → 10 → 27 → 37. После провала поток восстанавливается, но масштабировать его можно только вместе с качеством.</div>
+<div class="box"><b>Instagram: 320 лидов · 40,6% некач.</b>Недельная кривая: 47 → 20 → 88 → 112. Инфлюенс получает основной рост, но каждое размещение оценивается отдельно.</div>
+<div class="box"><b>Яндекс: 29 лидов · 58,6% некач.</b>Недельная кривая: 8 → 1 → 6 → 14. Поэтому план Директа начинается с восстановления, а не с мгновенного объёма.</div>
+<div class="box"><b>Директ: 92 548 ₽ / 51 конверсия</b>В кабинете за последние 30 дней — CPA 1 815 ₽ по целям Яндекса; по лидам, подтверждённым Б24, ориентир около 3,2 тыс. ₽. Цели и CRM сейчас расходятся.</div>
+<div class="box"><b>Метрика: счётчик не найден</b>На доступном аккаунте нет счётчика сайта. До подключения корректного счётчика решения принимаются по Б24 и Директу; потери формы остаются риском.</div>
+</div>
+</section>
+
+<section class="sec">
+<h2>План по спринтам — главный уровень управления</h2>
+<p class="desc">Внесите недельный факт по каждому каналу. Недобор лидов увеличит следующий спринт этого канала, перевыполнение уменьшит. Ручной недельный факт имеет приоритет над суммой дней.</p>
+<div class="table"><table><thead><tr><th>Спринт</th><th>Канал</th><th>Базовый план<br>лиды / бюджет</th><th>Актуальный план<br>лиды / бюджет</th><th>Цель<br>продажи / конв.</th><th>Факт<br>лиды</th><th>Факт<br>расход</th><th>Факт<br>некач.</th><th>Факт<br>продажи</th><th>Результат</th><th>Изменение<br>следующего спринта</th></tr></thead><tbody id="sprintRows"></tbody></table></div>
+<div class="legend">Факт лида закрывает недельный объём. Некачество оценивается только при заполненном объёме; жёсткий стоп — выше 40%.</div>
+</section>
+
+<section class="sec">
+<h2>Ежедневный план / факт — все дни и оба канала</h2>
+<p class="desc">Все предыдущие дни остаются видимыми. После ввода факта план этого дня фиксируется, а разница распределяется по оставшимся дням текущего спринта.</p>
+<div class="controls">
+<div class="control"><label for="sprintFilter">Показать спринт</label><select id="sprintFilter"><option value="all">Все спринты</option></select></div>
+<div class="control"><label for="channelFilter">Показать канал</label><select id="channelFilter"><option value="all">Все каналы</option></select></div>
+</div>
+<div class="table daily-wrap"><table><thead><tr><th>Дата</th><th>Спринт</th><th>Канал</th><th>Базовый план<br>лиды / бюджет</th><th>Актуальный план<br>лиды / бюджет</th><th>Лиды факт</th><th>Расход факт</th><th>Некач. факт</th><th>Продажи факт</th><th>CPL факт</th><th>Конверсия</th><th>Некач., %</th><th>Результат дня</th></tr></thead><tbody id="dailyRows"></tbody></table></div>
+<div class="legend">Чтобы закрыть день без результата, внесите 0. Вводите факты по порядку дат: следующий день пересчитывается после сохранения предыдущего.</div>
+</section>
+
+<section class="sec">
+<h2>Каналы, объём и бюджет</h2>
+<p class="desc">Вебинары, WA / Telegram, звонки и CRM-формы исключены. Платный поток состоит только из инфлюенса и Яндекс Директа.</p>
+<div class="table"><table><thead><tr><th>Канал</th><th>Доля лидов</th><th>Лиды план / факт</th><th>CPL цель / факт</th><th>Продажи план / факт</th><th>Конверсия факт</th><th>Некач. факт</th><th>Бюджет план / факт</th><th>Решение</th></tr></thead><tbody id="channelRows"></tbody></table></div>
+<div class="alert amber"><b>Яндекс Директ</b>CPL фиксирован на уровне 700 ₽ во всех спринтах. Раскачка строится только по количеству лидов: 20 → 45 → 100 → 220 → 400 → 600. Недельный бюджет автоматически равен объёму лидов × 700 ₽.</div>
+</section>
+
+<section class="sec">
+<h2>Риски и рычаги управления</h2>
+<div class="grid">
+<div class="box"><b>Некачество выше 40%</b>Канал или связка останавливаются в тот же день. Перезапуск — только после разбора причин и теста новой аудитории.</div>
+<div class="box"><b>Инфлюенс дороже 315 ₽</b>Не повторять размещение. Запросить компенсационный выход или перенести объём блогеру с подтверждённым качеством.</div>
+<div class="box"><b>Яндекс дороже 700 ₽</b>Остановить дорогую кампанию, почистить запросы и минус-слова, вернуть лимит только после контрольной выборки.</div>
+<div class="box"><b>Конверсия ниже кривой</b>Не докупать объём автоматически. Сначала проверить зрелую когорту старше 2 дней, скорость ответа ОП и причины потерь.</div>
+<div class="box"><b>Недобор недельного потока</b>Следующий спринт автоматически получает остаток. Маркетолог обязан подтвердить канал, размещения и дополнительный бюджет.</div>
+<div class="box"><b>Перегруз отдела продаж</b>Не увеличивать поток при первом ответе дольше 5 минут. Сдвинуть выходы или открыть дополнительную линию обработки.</div>
+</div>
+</section>
+
+<section class="sec">
+<h2>Gate-чек-лист оценки</h2>
+<p class="desc">Чек-лист сохраняется в браузере. Следующий недельный бюджет открывается только после закрытия обязательных пунктов.</p>
+<div class="table"><table class="check"><thead><tr><th>Готово</th><th>Проверка</th><th>Норма</th><th>Что делать при отклонении</th><th>Ответственный</th></tr></thead><tbody>
+<tr><td><input class="gate" type="checkbox" data-k="leads"></td><td>Объём лидов</td><td>Не ниже 90% актуального недельного плана</td><td>Проверить недооткрут, график блогеров и лимиты; перенести объём в работающий канал.</td><td>Маркетолог</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="quality"></td><td>Качество потока</td><td>По кривой 35,9% → 28%; никогда не выше 40%</td><td>Разложить некач по источникам и причинам; остановить проблемную аудиторию.</td><td>Маркетолог + CRM-аналитик</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="cpl_inf"></td><td>CPL инфлюенса</td><td>≤315 ₽ за валовый лид</td><td>Не повторять размещение; заменить блогера или получить компенсационный выход.</td><td>Менеджер инфлюенса</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="cpl_yandex"></td><td>CPL Яндекса</td><td>≤700 ₽ за целевой лид</td><td>Отключить дорогую связку, проверить запросы, объявления и посадочную страницу.</td><td>Performance-специалист</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="conversion"></td><td>Конверсия зрелой когорты</td><td>По кривой спринта, к последнему — 35%</td><td>Проверить качество, скорость первого касания и стадии потерь; свежие лиды не считать проигранными.</td><td>CRM-аналитик</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="capacity"></td><td>Готовность ОП</td><td>Первый ответ ≤5 минут, нет необработанной очереди</td><td>Сдвинуть размещения или добавить линию обработки до увеличения трафика.</td><td>Координатор ОП</td></tr>
+<tr><td><input class="gate" type="checkbox" data-k="budget"></td><td>Решение по бюджету</td><td>Зафиксированы сумма, каналы, дневные лимиты и стоп-условия</td><td>Не открывать следующий лимит без письменного решения по отклонениям.</td><td>Собственник</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec">
+<h2>Аналитика, которая нужна ежедневно</h2>
+<div class="table"><table><thead><tr><th>Отчёт</th><th>Разрез</th><th>Частота</th><th>Управленческое решение</th></tr></thead><tbody>
+<tr><td>Лиды, расход и CPL</td><td>Канал → кампания → блогер / объявление</td><td>Каждый день</td><td>Добавить, сократить или остановить бюджет</td></tr>
+<tr><td>Некачественные лиды</td><td>Источник → причина → менеджер квалификации</td><td>2 раза в день</td><td>Отключить аудиторию или исправить квалификацию</td></tr>
+<tr><td>Скорость первого касания</td><td>Канал → час → менеджер</td><td>Каждый день</td><td>Сдвинуть трафик или усилить линию обработки</td></tr>
+<tr><td>Когортная конверсия</td><td>Дата лида → канал → продажа через 2+ дня</td><td>Каждые 48 часов</td><td>Проверить реальную отдачу без искажения свежими лидами</td></tr>
+<tr><td>CAC нового клиента</td><td>Канал → кампания → когорта</td><td>После созревания когорты</td><td>Перераспределить бюджет в источник с подтверждённой оплатой</td></tr>
+<tr><td>Причины потерь</td><td>Цена, не дозвонились, нецелевой, отказ, дубль</td><td>Каждый день</td><td>Разделить проблему трафика и проблему обработки</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="sec">
+<h2>Месячный план — маркетинг и каналы</h2>
+<p class="desc">Июль и август показаны в самом конце. План меняется вместе с недельным переносом; факты берутся из ежедневных строк.</p>
+<div class="table"><table><thead><tr><th>Канал</th><th>Июль: лиды<br>план / факт</th><th>Июль: бюджет<br>план / факт</th><th>Июль: продажи<br>план / факт</th><th>Август: лиды<br>план / факт</th><th>Август: бюджет<br>план / факт</th><th>Август: продажи<br>план / факт</th></tr></thead><tbody id="monthlyRows"></tbody></table></div>
+<div class="alert green"><b>Общая рекомендация</b>Оптимизировать не дешёвый лид, а пригодный лид и оплату зрелой когорты. Дешёвый некачественный поток создаёт ложное выполнение маркетинга и перегружает ОП.</div>
+</section>
+
+<footer class="foot">Версия 24.07.2026 · синхронизировано с управляемым планом продаж · факты и чек-лист сохраняются локально в браузере.</footer>
+
+<script>
+(()=>{
+const periods=[
+ {name:'Спринт 1',label:'24–26.07',start:'2026-07-24',end:'2026-07-26',sales:24,conv:.096,bad:.40,weights:[.90,1,1.10]},
+ {name:'Спринт 2',label:'27.07–02.08',start:'2026-07-27',end:'2026-08-02',sales:63,conv:.14,bad:.38,weights:[.82,.88,.94,1,1.06,1.13,1.17]},
+ {name:'Спринт 3',label:'03–09.08',start:'2026-08-03',end:'2026-08-09',sales:152,conv:.19,bad:.35,weights:[.82,.88,.94,1,1.06,1.13,1.17]},
+ {name:'Спринт 4',label:'10–16.08',start:'2026-08-10',end:'2026-08-16',sales:288,conv:.24,bad:.32,weights:[.82,.88,.94,1,1.06,1.13,1.17]},
+ {name:'Спринт 5',label:'17–23.08',start:'2026-08-17',end:'2026-08-23',sales:540,conv:.30,bad:.29,weights:[.78,.86,.94,1,1.07,1.14,1.21]},
+ {name:'Спринт 6',label:'24–29.08',start:'2026-08-24',end:'2026-08-29',sales:783,conv:.35,bad:.26,weights:[.78,.86,.94,1.02,1.13,1.27]}
+];
+const channels=[
+ {name:'Инфлюенс / блогеры',short:'Инфлюенс',cpl:[650,560,480,420,370,315],leads:[230,405,700,980,1400,1635],sales:[22,57,133,235,420,573]},
+ {name:'Яндекс Директ',short:'Яндекс',cpl:700,leads:[20,45,100,220,400,600],sales:[2,6,19,53,120,210]},
+ {name:'Прочие источники',short:'Прочие',cpl:0,leads:[0,0,0,0,0,0],sales:[0,0,0,0,0,0],factOnly:true}
+];
+const factKey='sharhMarketingDailyV4',weekKey='sharhMarketingWeekV4',lockKey='sharhMarketingLocksV5',gateKey='sharhMarketingGatesV4';
+let facts=JSON.parse(localStorage.getItem(factKey)||'{}');
+let weekFacts=JSON.parse(localStorage.getItem(weekKey)||'{}');
+let locks=JSON.parse(localStorage.getItem(lockKey)||'{}');
+let gates=JSON.parse(localStorage.getItem(gateKey)||'{}');
+const fmt=n=>Math.round(n).toLocaleString('ru-RU'),money=n=>fmt(n)+' ₽',pct=(a,b)=>b?Math.round(a/b*1000)/10+'%':'—';
+const cplAt=(c,pi)=>Array.isArray(c.cpl)?c.cpl[pi]:c.cpl;
+const PLAN_LEADS=channels.reduce((s,c)=>s+c.leads.reduce((a,b)=>a+b,0),0);
+const PLAN_SALES=channels.reduce((s,c)=>s+c.sales.reduce((a,b)=>a+b,0),0);
+const PLAN_BUDGET=channels.reduce((s,c)=>s+c.leads.reduce((a,b,pi)=>a+b*cplAt(c,pi),0),0);
+function renderCommandCenter(){
+ const host=document.getElementById('sprintCards');if(!host)return;
+ const today='2026-07-27';
+ host.innerHTML=periods.map((p,pi)=>{
+  const leadTotal=channels.reduce((s,c)=>s+c.leads[pi],0),budget=channels.reduce((s,c)=>s+c.leads[pi]*cplAt(c,pi),0),days=dates(p.start,p.end).length,inf=channels[0].leads[pi],direct=channels[1].leads[pi],other=channels[2].leads[pi],active=today>=p.start&&today<=p.end;
+  const factLeads=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'leads'),0),factBad=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'bad'),0),factSales=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'sales'),0),factSpend=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'spend'),0),hasFact=channels.some((c,ci)=>effectiveWeekFact(pi,ci,'leads')!==null),completion=leadTotal?factLeads/leadTotal:0,badRate=factLeads?factBad/factLeads:0,conv=factLeads?factSales/factLeads:0,cpl=factLeads?factSpend/factLeads:0;
+  const verdict=!hasFact?'<span class="neutral">ожидает данные</span>':badRate>.40?'<span class="bad">остановить и исправить качество</span>':completion<.9?'<span class="warn">усилить объём</span>':conv<p.conv*.9?'<span class="warn">оптимизировать конверсию</span>':'<span class="good">масштабировать</span>';
+  return `<article class="sprint-card ${active?'active':''}"><div class="sprint-head"><div><h3>${p.name}</h3><span class="date">${p.label}</span></div>${active?'<span class="mode-pill">текущий</span>':''}</div><div class="sprint-main"><div class="metric"><b>${fmt(leadTotal)}</b><span>лидов за спринт</span></div><div class="metric"><b>${fmt(Math.ceil(leadTotal/days))}</b><span>в среднем в день</span></div><div class="metric"><b>${money(budget)}</b><span>бюджет</span></div></div><div class="channel-line"><span>Инфлюенс ${fmt(inf)}</span><span>Директ ${fmt(direct)}</span><span>Прочие ${fmt(other)}</span></div><div class="split"><i style="width:${inf/leadTotal*100}%"></i><i style="width:${direct/leadTotal*100}%"></i><i style="width:${leadTotal?other/leadTotal*100:0}%"></i></div><div class="channel-line"><span>Продажи ${p.sales}</span><span>Конв. ${pct(p.sales,leadTotal)}</span><span>Некач ≤${Math.round(p.bad*100)}%</span></div><div class="efficiency"><b>Эффективность: ${verdict}</b><div class="eff-grid"><span><b>${pct(factLeads,leadTotal)}</b>план лидов</span><span><b>${factLeads?pct(factBad,factLeads):'—'}</b>некач</span><span><b>${factLeads?pct(factSales,factLeads):'—'}</b>конверсия</span><span><b>${factLeads&&factSpend?money(cpl):'—'}</b>CPL факт</span></div></div></article>`
+ }).join('')
+}
+async function syncFromB24(){
+ const btn=document.getElementById('syncB24'),state=document.getElementById('syncState');if(!btn||!state)return;
+ btn.disabled=true;state.textContent='загружаю данные Б24…';
+ try{
+  const response=await fetch('/api/marketing-b24',{cache:'no-store'});if(!response.ok)throw new Error('sync');
+  const data=await response.json();
+  (data.channels||[]).forEach((channel,ci)=>{(channel.weeks||[]).forEach((w,pi)=>{['leads','bad','sales'].forEach(c=>{weekFacts[wkey(pi,ci,c)]=Math.max(0,Number(w[c])||0)})})});
+  localStorage.setItem(weekKey,JSON.stringify(weekFacts));state.textContent=`обновлено из Б24: ${new Date(data.updatedAt).toLocaleString('ru-RU')}`;renderAll()
+ }catch(e){state.textContent=location.protocol==='file:'?'автообновление работает на опубликованном сайте':'не удалось получить данные Б24'}
+ finally{btn.disabled=false}
+}
+function prepareSimpleView(){
+ const secs=[...document.querySelectorAll('section.sec')];
+ const titles=['commandCenter','summarySection','factsSection','sprintsSection','dailySection','channelsSection','risksSection','checklistSection','analyticsSection','monthlySection'];
+ secs.forEach((s,i)=>{if(!s.id&&titles[i])s.id=titles[i]});
+ ['factsSection','risksSection','checklistSection','analyticsSection','monthlySection'].forEach(id=>document.getElementById(id)?.classList.add('secondary'));
+ document.body.classList.add('compact-mode');
+ const btn=document.getElementById('viewMode');if(btn)btn.addEventListener('click',()=>{document.body.classList.toggle('compact-mode');btn.textContent=document.body.classList.contains('compact-mode')?'Показать весь документ':'Скрыть аналитику'});
+ secs.filter(s=>!s.classList.contains('command')).forEach(s=>{const h=s.querySelector('h2');if(!h)return;const b=document.createElement('button');b.type='button';b.className='section-toggle';b.textContent='свернуть';b.addEventListener('click',()=>{s.classList.toggle('is-collapsed');b.textContent=s.classList.contains('is-collapsed')?'развернуть':'свернуть'});h.prepend(b)});
+}
+function dates(a,b){const out=[];let d=new Date(a+'T00:00:00Z'),z=new Date(b+'T00:00:00Z');for(;d<=z;d.setUTCDate(d.getUTCDate()+1))out.push(d.toISOString().slice(0,10));return out}
+function allocate(total,weights){total=Math.max(0,Math.round(total));if(!weights.length)return[];let use=weights.slice(),sum=use.reduce((a,b)=>a+b,0);if(sum<=0){use=use.map(()=>1);sum=use.length}const raw=use.map(w=>total*w/sum),base=raw.map(Math.floor);let left=total-base.reduce((a,b)=>a+b,0);raw.map((v,i)=>({i,r:v-base[i]})).sort((a,b)=>b.r-a.r).slice(0,left).forEach(x=>base[x.i]++);return base}
+function key(d,ci,c){return `${d}|${ci}|${c}`}
+function wkey(pi,ci,c){return `${pi}|${ci}|${c}`}
+function has(d,ci,c){return Object.prototype.hasOwnProperty.call(facts,key(d,ci,c))}
+function val(d,ci,c){return has(d,ci,c)?Number(facts[key(d,ci,c)])||0:0}
+function hasWeek(pi,ci,c){return Object.prototype.hasOwnProperty.call(weekFacts,wkey(pi,ci,c))}
+function weekVal(pi,ci,c){return hasWeek(pi,ci,c)?Number(weekFacts[wkey(pi,ci,c)])||0:0}
+const baseDaily={};
+periods.forEach((p,pi)=>{const ds=dates(p.start,p.end);channels.forEach((c,ci)=>{const ls=allocate(c.leads[pi],p.weights),ss=allocate(c.sales[pi],p.weights),bs=allocate(c.leads[pi]*cplAt(c,pi),p.weights);ds.forEach((d,i)=>baseDaily[`${d}|${ci}`]={pi,leads:ls[i],spend:bs[i],sales:ss[i]})})});
+function dailyAggregate(pi,ci,c){const ds=dates(periods[pi].start,periods[pi].end);let sum=0,filled=0;ds.forEach(d=>{if(has(d,ci,c)){filled++;sum+=val(d,ci,c)}});return{sum,filled,total:ds.length,complete:filled===ds.length}}
+function effectiveWeekFact(pi,ci,c){if(hasWeek(pi,ci,c))return weekVal(pi,ci,c);const a=dailyAggregate(pi,ci,c);return a.complete?a.sum:null}
+function revisedLeads(){
+ const out=channels.map(()=>[]),carry=channels.map(()=>0);
+ periods.forEach((p,pi)=>channels.forEach((c,ci)=>{const raw=c.leads[pi]+carry[ci],plan=Math.max(0,raw),res=Math.min(0,raw),fact=effectiveWeekFact(pi,ci,'leads');out[ci][pi]=Math.round(plan);carry[ci]=fact===null?res:res+plan-fact}));
+ return out
+}
+function planLock(d,ci,c){const k=key(d,ci,c);return Object.prototype.hasOwnProperty.call(locks,k)?Number(locks[k]):null}
+function currentDayPlan(d,ci,c,revised){
+ const locked=planLock(d,ci,c);if(locked!==null)return locked;
+ const row=baseDaily[`${d}|${ci}`];if(!row)return 0;const pi=row.pi,ds=dates(periods[pi].start,periods[pi].end),target=c==='leads'?revised[ci][pi]:revised[ci][pi]*cplAt(channels[ci],pi),prior=ds.filter(x=>x<d).reduce((sum,x)=>sum+val(x,ci,c),0),open=ds.filter(x=>x>=d&&!has(x,ci,c)),remaining=Math.max(0,target-prior),weights=open.map(x=>baseDaily[`${x}|${ci}`]?.[c]||1),dist=allocate(remaining,weights),idx=open.indexOf(d);
+ return idx>=0?dist[idx]:row[c]
+}
+function recognized(pi,ci,c){const eff=effectiveWeekFact(pi,ci,c);return eff===null?dailyAggregate(pi,ci,c).sum:eff}
+function recognizedTotals(){
+ let leads=0,spend=0,bad=0,sales=0;periods.forEach((p,pi)=>channels.forEach((c,ci)=>{leads+=recognized(pi,ci,'leads');spend+=recognized(pi,ci,'spend');bad+=recognized(pi,ci,'bad');sales+=recognized(pi,ci,'sales')}));
+ return{leads,spend,bad,sales}
+}
+function statusFor(planLeads,leads,spend,bad,sales,cpl,targetConv,badLimit,closed){
+ if(!closed)return'<span class="neutral">спринт не закрыт</span>';
+ const badShare=leads?bad/leads:0,actualCpl=leads?spend/leads:0,conv=leads?sales/leads:0;
+ if(badShare>.40)return'<span class="bad">СТОП: некач >40%</span>';
+ if(leads<planLeads*.9)return'<span class="bad">недобор лидов</span>';
+ if(badShare>badLimit)return'<span class="bad">качество ниже плана</span>';
+ if(actualCpl>cpl*1.05)return'<span class="bad">CPL выше лимита</span>';
+ if(conv<targetConv*.9)return'<span class="warn">конверсия ниже кривой</span>';
+ return'<span class="good">gate пройден</span>'
+}
+function renderCards(){
+ const t=recognizedTotals(),r=revisedLeads();document.getElementById('factLeads').textContent=fmt(t.leads);document.getElementById('factSales').textContent=fmt(t.sales);document.getElementById('factSpend').textContent=money(t.spend);document.getElementById('remainLeads').textContent=fmt(Math.max(0,PLAN_LEADS-t.leads));document.getElementById('remainSales').textContent=fmt(Math.max(0,PLAN_SALES-t.sales));document.getElementById('remainBudget').textContent=money(Math.max(0,PLAN_BUDGET-t.spend));
+ let next=null,leads=0,spend=0;for(const p of periods){for(const d of dates(p.start,p.end)){let open=false,l=0,s=0;channels.forEach((c,ci)=>{if(!has(d,ci,'leads')||!has(d,ci,'spend'))open=true;l+=currentDayPlan(d,ci,'leads',r);s+=currentDayPlan(d,ci,'spend',r)});if(open){next=d;leads=l;spend=s;break}}if(next)break}
+ document.getElementById('nextDayLeads').textContent=next?fmt(leads):'0';document.getElementById('nextDayBudget').textContent=next?money(spend):'0 ₽';document.getElementById('nextDayDate').textContent=next?`${next.slice(8,10)}.${next.slice(5,7)}`:'всё закрыто'
+}
+function renderSprints(){
+ const body=document.getElementById('sprintRows'),r=revisedLeads();body.innerHTML='';
+ periods.forEach((p,pi)=>{
+  let total={baseL:0,baseB:0,planL:0,planB:0,sales:0,leads:0,spend:0,bad:0,factSales:0};
+  channels.forEach((c,ci)=>{const targetCpl=cplAt(c,pi),baseL=c.leads[pi],baseB=baseL*targetCpl,planL=r[ci][pi],planB=planL*targetCpl,leads=recognized(pi,ci,'leads'),spend=recognized(pi,ci,'spend'),bad=recognized(pi,ci,'bad'),sales=recognized(pi,ci,'sales'),closed=effectiveWeekFact(pi,ci,'leads')!==null,delta=closed?leads-planL:null,next=pi<periods.length-1?r[ci][pi+1]-c.leads[pi+1]:0,convTarget=c.sales[pi]/c.leads[pi],status=statusFor(planL,leads,spend,bad,sales,targetCpl,convTarget,p.bad,closed);
+   total.baseL+=baseL;total.baseB+=baseB;total.planL+=planL;total.planB+=planB;total.sales+=c.sales[pi];total.leads+=leads;total.spend+=spend;total.bad+=bad;total.factSales+=sales;
+   body.insertAdjacentHTML('beforeend',`<tr class="${ci===1?'direct':''}"><td><b>${p.name}</b><br>${p.label}</td><td><b>${c.name}</b></td><td>${fmt(baseL)} / ${money(baseB)}</td><td>${fmt(planL)} / ${money(planB)}</td><td>${c.sales[pi]} / ${pct(c.sales[pi],c.leads[pi])}</td><td><input class="week-fact" type="number" min="0" data-pi="${pi}" data-ci="${ci}" data-c="leads" value="${hasWeek(pi,ci,'leads')?weekVal(pi,ci,'leads'):''}" placeholder="${dailyAggregate(pi,ci,'leads').sum}"></td><td><input class="week-fact" type="number" min="0" data-pi="${pi}" data-ci="${ci}" data-c="spend" value="${hasWeek(pi,ci,'spend')?weekVal(pi,ci,'spend'):''}" placeholder="${dailyAggregate(pi,ci,'spend').sum}"></td><td><input class="week-fact" type="number" min="0" data-pi="${pi}" data-ci="${ci}" data-c="bad" value="${hasWeek(pi,ci,'bad')?weekVal(pi,ci,'bad'):''}" placeholder="${dailyAggregate(pi,ci,'bad').sum}"></td><td><input class="week-fact" type="number" min="0" data-pi="${pi}" data-ci="${ci}" data-c="sales" value="${hasWeek(pi,ci,'sales')?weekVal(pi,ci,'sales'):''}" placeholder="${dailyAggregate(pi,ci,'sales').sum}"></td><td>${status}<br><small>${closed?(delta>=0?`+${delta} лидов`:`${delta} лидов`):`факт ${fmt(leads)} лидов`}; CPL ${leads?money(spend/leads):'—'}; некач ${pct(bad,leads)}</small></td><td>${pi===periods.length-1?'—':next===0?'<span class="neutral">без изменений</span>':next>0?`<span class="bad">+${next} лидов</span>`:`<span class="good">${next} лидов</span>`}</td></tr>`)
+  });
+  const closed=channels.every((c,ci)=>effectiveWeekFact(pi,ci,'leads')!==null),delta=closed?total.leads-total.planL:null;
+  body.insertAdjacentHTML('beforeend',`<tr class="period-total"><td>${p.name}</td><td>ИТОГО СПРИНТ</td><td>${fmt(total.baseL)} / ${money(total.baseB)}</td><td>${fmt(total.planL)} / ${money(total.planB)}</td><td>${total.sales} / ${pct(total.sales,total.baseL)}</td><td>${fmt(total.leads)}</td><td>${money(total.spend)}</td><td>${fmt(total.bad)}</td><td>${fmt(total.factSales)}</td><td>${closed?(delta>=0?`<span class="good">+${delta}</span>`:`<span class="bad">${delta}</span>`):'<span class="neutral">не закрыт</span>'}</td><td>—</td></tr>`)
+ });
+ document.querySelectorAll('.week-fact').forEach(x=>x.addEventListener('change',e=>{const t=e.target,k=wkey(Number(t.dataset.pi),Number(t.dataset.ci),t.dataset.c);if(t.value==='')delete weekFacts[k];else weekFacts[k]=Math.max(0,Number(t.value)||0);localStorage.setItem(weekKey,JSON.stringify(weekFacts));renderAll()}))
+}
+function renderDaily(){
+ const sf=document.getElementById('sprintFilter').value,cf=document.getElementById('channelFilter').value,body=document.getElementById('dailyRows'),r=revisedLeads(),html=[];
+ periods.forEach((p,pi)=>{if(sf!=='all'&&Number(sf)!==pi)return;dates(p.start,p.end).forEach(d=>{let total={bl:0,bb:0,pl:0,pb:0,fl:0,fs:0,bad:0,sales:0,filled:0,need:channels.length*2};channels.forEach((c,ci)=>{const row=baseDaily[`${d}|${ci}`],pl=currentDayPlan(d,ci,'leads',r),pb=currentDayPlan(d,ci,'spend',r),hl=has(d,ci,'leads'),hs=has(d,ci,'spend'),fl=val(d,ci,'leads'),fs=val(d,ci,'spend'),bad=val(d,ci,'bad'),sales=val(d,ci,'sales'),closed=hl&&hs,cpl=fl?fs/fl:0,conv=fl?sales/fl:0,badShare=fl?bad/fl:0,delta=closed?fl-pl:null,status=!closed?'<span class="neutral">ожидает факт</span>':badShare>.40?'<span class="bad">СТОП: некач</span>':delta<0?`<span class="bad">${delta} лидов</span>`:`<span class="good">+${delta} лидов</span>`;
+   total.bl+=row.leads;total.bb+=row.spend;total.pl+=pl;total.pb+=pb;total.fl+=fl;total.fs+=fs;total.bad+=bad;total.sales+=sales;if(hl)total.filled++;if(hs)total.filled++;
+   if(cf!=='all'&&Number(cf)!==ci)return;
+   html.push(`<tr class="${ci===1?'direct':''}"><td><b>${d.slice(8,10)}.${d.slice(5,7)}</b></td><td>${p.name}</td><td><b>${c.name}</b></td><td>${row.leads} / ${money(row.spend)}</td><td>${pl} / ${money(pb)}</td><td><input class="fact daily-fact" type="number" min="0" data-d="${d}" data-ci="${ci}" data-c="leads" value="${hl?fl:''}"></td><td><input class="fact daily-fact" type="number" min="0" data-d="${d}" data-ci="${ci}" data-c="spend" value="${hs?fs:''}"></td><td><input class="fact daily-fact" type="number" min="0" data-d="${d}" data-ci="${ci}" data-c="bad" value="${has(d,ci,'bad')?bad:''}"></td><td><input class="fact daily-fact" type="number" min="0" data-d="${d}" data-ci="${ci}" data-c="sales" value="${has(d,ci,'sales')?sales:''}"></td><td>${fl?money(cpl):'—'}</td><td>${fl?pct(sales,fl):'—'}</td><td>${fl?pct(bad,fl):'—'}</td><td>${status}</td></tr>`)
+  });
+  if(cf==='all'){const closed=total.filled===total.need,delta=closed?total.fl-total.pl:null;html.push(`<tr class="day-total"><td>${d.slice(8,10)}.${d.slice(5,7)}</td><td>${p.name}</td><td>ИТОГО ДЕНЬ</td><td>${total.bl} / ${money(total.bb)}</td><td>${total.pl} / ${money(total.pb)}</td><td>${total.fl}</td><td>${money(total.fs)}</td><td>${total.bad}</td><td>${total.sales}</td><td>${total.fl?money(total.fs/total.fl):'—'}</td><td>${total.fl?pct(total.sales,total.fl):'—'}</td><td>${total.fl?pct(total.bad,total.fl):'—'}</td><td>${delta===null?'<span class="neutral">не закрыт</span>':delta>=0?`<span class="good">+${delta}</span>`:`<span class="bad">${delta}</span>`}</td></tr>`)}
+ })});
+ body.innerHTML=html.join('');
+ document.querySelectorAll('.daily-fact').forEach(x=>x.addEventListener('change',e=>{const t=e.target,d=t.dataset.d,ci=Number(t.dataset.ci),c=t.dataset.c,k=key(d,ci,c);if(t.value===''){delete facts[k];delete locks[k]}else{if((c==='leads'||c==='spend')&&!Object.prototype.hasOwnProperty.call(locks,k)){const r0=revisedLeads();locks[k]=currentDayPlan(d,ci,c,r0)}facts[k]=Math.max(0,Number(t.value)||0)}localStorage.setItem(factKey,JSON.stringify(facts));localStorage.setItem(lockKey,JSON.stringify(locks));renderAll()}))
+}
+function renderChannels(){
+ const body=document.getElementById('channelRows');body.innerHTML='';
+ channels.forEach((c,ci)=>{const planL=c.leads.reduce((a,b)=>a+b,0),planS=c.sales.reduce((a,b)=>a+b,0),planB=c.leads.reduce((a,b,pi)=>a+b*cplAt(c,pi),0),lastCpl=cplAt(c,periods.length-1);let leads=0,spend=0,bad=0,sales=0;periods.forEach((p,pi)=>{leads+=recognized(pi,ci,'leads');spend+=recognized(pi,ci,'spend');bad+=recognized(pi,ci,'bad');sales+=recognized(pi,ci,'sales')});const actualCpl=leads?spend/leads:0,badShare=leads?bad/leads:0,decision=badShare>.40?'<span class="bad">остановить</span>':leads&&actualCpl>lastCpl*1.05?'<span class="bad">сократить и оптимизировать</span>':'<span class="good">вести по gate</span>';
+  body.insertAdjacentHTML('beforeend',`<tr class="${ci===1?'direct':''}"><td><b>${c.name}</b></td><td>${pct(planL,PLAN_LEADS)}</td><td>${fmt(planL)} / ${fmt(leads)}</td><td>${money(lastCpl)} финал / ${leads?money(actualCpl):'—'}</td><td>${fmt(planS)} / ${fmt(sales)}</td><td>${pct(sales,leads)}</td><td>${pct(bad,leads)}</td><td>${money(planB)} / ${money(spend)}</td><td>${decision}</td></tr>`)
+ });
+ const t=recognizedTotals();body.insertAdjacentHTML('beforeend',`<tr class="total"><td>ИТОГО</td><td>100%</td><td>${fmt(PLAN_LEADS)} / ${fmt(t.leads)}</td><td>${t.leads?money(t.spend/t.leads):'—'}</td><td>${fmt(PLAN_SALES)} / ${fmt(t.sales)}</td><td>${pct(t.sales,t.leads)}</td><td>${pct(t.bad,t.leads)}</td><td>${money(PLAN_BUDGET)} / ${money(t.spend)}</td><td>—</td></tr>`)
+}
+function monthPlan(ci,month,r){
+ let leads=0,spend=0,sales=0;periods.forEach((p,pi)=>{const ds=dates(p.start,p.end),ls=allocate(r[ci][pi],p.weights),bs=allocate(r[ci][pi]*cplAt(channels[ci],pi),p.weights),ss=allocate(channels[ci].sales[pi],p.weights);ds.forEach((d,i)=>{if(d.slice(0,7)===month){leads+=ls[i];spend+=bs[i];sales+=ss[i]}})});return{leads,spend,sales}
+}
+function monthFact(ci,month){let leads=0,spend=0,sales=0;periods.forEach(p=>dates(p.start,p.end).forEach(d=>{if(d.slice(0,7)===month){leads+=val(d,ci,'leads');spend+=val(d,ci,'spend');sales+=val(d,ci,'sales')}}));return{leads,spend,sales}}
+function renderMonthly(){
+ const body=document.getElementById('monthlyRows'),r=revisedLeads();body.innerHTML='';let t={jpl:0,jpb:0,jps:0,jfl:0,jfb:0,jfs:0,apl:0,apb:0,aps:0,afl:0,afb:0,afs:0};
+ channels.forEach((c,ci)=>{const jp=monthPlan(ci,'2026-07',r),jf=monthFact(ci,'2026-07'),ap=monthPlan(ci,'2026-08',r),af=monthFact(ci,'2026-08');t.jpl+=jp.leads;t.jpb+=jp.spend;t.jps+=jp.sales;t.jfl+=jf.leads;t.jfb+=jf.spend;t.jfs+=jf.sales;t.apl+=ap.leads;t.apb+=ap.spend;t.aps+=ap.sales;t.afl+=af.leads;t.afb+=af.spend;t.afs+=af.sales;
+  body.insertAdjacentHTML('beforeend',`<tr class="${ci===1?'direct':''}"><td><b>${c.name}</b></td><td>${fmt(jp.leads)} / ${fmt(jf.leads)}</td><td>${money(jp.spend)} / ${money(jf.spend)}</td><td>${jp.sales} / ${jf.sales}</td><td>${fmt(ap.leads)} / ${fmt(af.leads)}</td><td>${money(ap.spend)} / ${money(af.spend)}</td><td>${ap.sales} / ${af.sales}</td></tr>`)
+ });
+ body.insertAdjacentHTML('beforeend',`<tr class="total"><td>ИТОГО</td><td>${fmt(t.jpl)} / ${fmt(t.jfl)}</td><td>${money(t.jpb)} / ${money(t.jfb)}</td><td>${t.jps} / ${t.jfs}</td><td>${fmt(t.apl)} / ${fmt(t.afl)}</td><td>${money(t.apb)} / ${money(t.afb)}</td><td>${t.aps} / ${t.afs}</td></tr>`)
+}
+const sprintFilter=document.getElementById('sprintFilter'),channelFilter=document.getElementById('channelFilter');
+periods.forEach((p,pi)=>sprintFilter.insertAdjacentHTML('beforeend',`<option value="${pi}">${p.name} · ${p.label}</option>`));
+channels.forEach((c,ci)=>channelFilter.insertAdjacentHTML('beforeend',`<option value="${ci}">${c.name}</option>`));
+sprintFilter.addEventListener('change',renderDaily);channelFilter.addEventListener('change',renderDaily);
+document.querySelectorAll('.gate').forEach(x=>{x.checked=!!gates[x.dataset.k];x.addEventListener('change',e=>{gates[e.target.dataset.k]=e.target.checked;localStorage.setItem(gateKey,JSON.stringify(gates))})});
+document.getElementById('syncB24')?.addEventListener('click',syncFromB24);
+function renderAll(){renderCommandCenter();renderCards();renderSprints();renderDaily();renderChannels();renderMonthly()}
+prepareSimpleView();
+const currentSprint=periods.findIndex(p=>'2026-07-27'>=p.start&&'2026-07-27'<=p.end);if(currentSprint>=0)sprintFilter.value=String(currentSprint);
+renderAll();
+if(location.protocol!=='file:')syncFromB24();
+})();
+</script>
+</main></body></html>
