@@ -344,3 +344,46 @@ if(location.protocol!=='file:')syncFromB24();
 })();
 </script>
 </main></body></html>
+
+<script id="actualBudgetAddon">
+(()=>{
+ const STORE='sharhMarketingActualChannelSpendV1',TOTAL_PLAN=3148795;
+ const read=()=>{try{return JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){return{}}};
+ const money=n=>Math.round(Number(n)||0).toLocaleString('ru-RU')+' ₽';
+ const num=s=>Number(String(s||'').replace(/[^0-9.-]/g,''))||0;
+ let busy=false;
+ function enhance(){
+  if(busy)return;busy=true;
+  const body=document.getElementById('channelRows');
+  if(body){
+   const rows=[...body.querySelectorAll('tr')],saved=read();let totalSpend=0,totalLeads=0;
+   rows.slice(0,4).forEach((row,ci)=>{
+    const cells=row.children;if(cells.length<9)return;
+    const leadParts=cells[2].textContent.split('/'),leads=num(leadParts[1]);totalLeads+=leads;
+    const budgetCell=cells[7];
+    if(!budgetCell.querySelector('.actual-channel-spend')){
+     const parts=budgetCell.textContent.split('/'),plan=(parts[0]||'').trim(),fallback=num(parts[1]);
+     budgetCell.dataset.planBudget=plan;budgetCell.dataset.fallbackSpend=String(fallback);
+     budgetCell.innerHTML='<b>'+plan+'</b><br><label style="font-size:10px;color:#687086">Потрачено фактически</label><br><input class="week-fact actual-channel-spend" type="number" min="0" data-ci="'+ci+'" value="'+(saved[ci]??'')+'" placeholder="'+fallback+'"><div class="budget-save-state" style="font-size:10px;color:#157347;margin-top:3px">сохраняется автоматически</div>';
+     const input=budgetCell.querySelector('.actual-channel-spend');
+     input.addEventListener('input',()=>{const data=read();if(input.value==='')delete data[ci];else data[ci]=Math.max(0,Number(input.value)||0);localStorage.setItem(STORE,JSON.stringify(data));apply()});
+    }
+    const input=budgetCell.querySelector('.actual-channel-spend'),effective=input.value===''?num(budgetCell.dataset.fallbackSpend):Math.max(0,Number(input.value)||0);totalSpend+=effective;
+    const cpl=leads?effective/leads:0,cplCell=cells[3],target=(cplCell.textContent.split('/')[0]||'').trim();cplCell.innerHTML=target+' / <b>'+ (leads?money(cpl):'—')+'</b>';
+   });
+   const total=rows[4];if(total&&total.children.length>=9){const cells=total.children,plan=(cells[7].textContent.split('/')[0]||'').trim();cells[7].innerHTML=plan+' / '+money(totalSpend);cells[3].textContent=totalLeads?money(totalSpend/totalLeads):'—'}
+   const fact=document.getElementById('factSpend'),remain=document.getElementById('remainBudget');if(fact)fact.textContent=money(totalSpend);if(remain)remain.textContent=money(Math.max(0,TOTAL_PLAN-totalSpend));
+  }
+  document.querySelectorAll('[data-c="spend"]').forEach(x=>{x.title='Введите фактически потраченный бюджет — значение сохраняется после изменения поля'});
+  busy=false;
+ }
+ function apply(){setTimeout(enhance,0)}
+ function addSaveButton(){
+  const section=document.getElementById('channelsSection');if(!section||document.getElementById('saveActualBudgets'))return;
+  const bar=document.createElement('div');bar.className='alert green';bar.innerHTML='<b>Фактически потраченный бюджет</b><span>Плановый бюджет не меняется. Введите расход за день, спринт или канал — CPL пересчитается автоматически.</span> <button id="saveActualBudgets" type="button" style="margin-left:10px;padding:7px 11px;border:0;border-radius:8px;background:#157347;color:white;font-weight:700;cursor:pointer">Сохранить бюджеты</button><span id="budgetSavedMsg" style="margin-left:8px"></span>';
+  section.insertBefore(bar,section.querySelector('.table'));
+  bar.querySelector('button').addEventListener('click',()=>{document.querySelectorAll('[data-c="spend"]').forEach(x=>x.dispatchEvent(new Event('change',{bubbles:true})));enhance();const m=document.getElementById('budgetSavedMsg');m.textContent='Сохранено';setTimeout(()=>m.textContent='',1800)});
+ }
+ addSaveButton();enhance();setInterval(enhance,700);
+})();
+</script>
