@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-30T09:36:52.384Z",
+  "updatedAt": "2026-07-30T16:01:58.075Z",
   "source": "Bitrix24",
-  "totalLeads": 361,
+  "totalLeads": 384,
   "channels": [
     {
       "key": "influencer",
@@ -230,13 +230,13 @@
       "weeks": [
         {
           "leads": 11,
-          "bad": 3,
+          "bad": 4,
           "sales": 1
         },
         {
           "leads": 11,
           "bad": 5,
-          "sales": 0
+          "sales": 1
         },
         {
           "leads": 0,
@@ -262,7 +262,7 @@
       "days": {
         "2026-07-24": {
           "leads": 5,
-          "bad": 2,
+          "bad": 3,
           "sales": 0
         },
         "2026-07-25": {
@@ -283,7 +283,7 @@
         "2026-07-28": {
           "leads": 6,
           "bad": 3,
-          "sales": 0
+          "sales": 1
         },
         "2026-07-29": {
           "leads": 3,
@@ -453,7 +453,7 @@
         {
           "leads": 9,
           "bad": 5,
-          "sales": 2
+          "sales": 3
         },
         {
           "leads": 13,
@@ -495,7 +495,7 @@
         "2026-07-26": {
           "leads": 6,
           "bad": 2,
-          "sales": 2
+          "sales": 3
         },
         "2026-07-27": {
           "leads": 3,
@@ -675,12 +675,12 @@
         {
           "leads": 126,
           "bad": 35,
-          "sales": 20
+          "sales": 21
         },
         {
-          "leads": 186,
-          "bad": 40,
-          "sales": 23
+          "leads": 209,
+          "bad": 43,
+          "sales": 34
         },
         {
           "leads": 0,
@@ -707,7 +707,7 @@
         "2026-07-24": {
           "leads": 43,
           "bad": 15,
-          "sales": 5
+          "sales": 6
         },
         "2026-07-25": {
           "leads": 55,
@@ -721,23 +721,23 @@
         },
         "2026-07-27": {
           "leads": 49,
-          "bad": 13,
+          "bad": 14,
           "sales": 6
         },
         "2026-07-28": {
           "leads": 62,
           "bad": 8,
-          "sales": 10
+          "sales": 12
         },
         "2026-07-29": {
           "leads": 54,
-          "bad": 16,
-          "sales": 5
+          "bad": 17,
+          "sales": 7
         },
         "2026-07-30": {
-          "leads": 21,
-          "bad": 3,
-          "sales": 2
+          "leads": 44,
+          "bad": 4,
+          "sales": 9
         },
         "2026-07-31": {
           "leads": 0,
