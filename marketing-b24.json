@@ -1,112 +1,11 @@
 {
-  "updatedAt": "2026-07-29T23:47:09.217Z",
+  "updatedAt": null,
   "source": "Bitrix24",
-  "totalLeads": 338,
+  "totalLeads": 0,
   "channels": [
-    {
-      "key": "influencer",
-      "weeks": [
-        {
-          "leads": 3,
-          "bad": 1,
-          "sales": 0
-        },
-        {
-          "leads": 1,
-          "bad": 1,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        }
-      ]
-    },
-    {
-      "key": "direct",
-      "weeks": [
-        {
-          "leads": 11,
-          "bad": 3,
-          "sales": 1
-        },
-        {
-          "leads": 10,
-          "bad": 4,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        }
-      ]
-    },
-    {
-      "key": "other",
-      "weeks": [
-        {
-          "leads": 135,
-          "bad": 39,
-          "sales": 21
-        },
-        {
-          "leads": 178,
-          "bad": 38,
-          "sales": 22
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        },
-        {
-          "leads": 0,
-          "bad": 0,
-          "sales": 0
-        }
-      ]
-    }
+    {"key": "influencer", "weeks": []},
+    {"key": "direct", "weeks": []},
+    {"key": "telegram", "weeks": []},
+    {"key": "other", "weeks": []}
   ]
 }

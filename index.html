@@ -7,7 +7,7 @@
 <style>
 :root{--ink:#182033;--muted:#687086;--line:#e4e7ef;--navy:#201a4b;--brand:#5b4ce2;--green:#157347;--greenbg:#eaf7f0;--amber:#9a5700;--amberbg:#fff4df;--red:#b3261e;--redbg:#fff0ef;--bluebg:#f0f4ff}
 *{box-sizing:border-box}body{margin:0;background:#f5f6fa;color:var(--ink);font:14px/1.45 Arial,sans-serif}.doc{max-width:1380px;margin:auto;background:#fff;min-height:100vh}.head{padding:28px 34px;background:var(--navy);color:#fff}.tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#cfc9ff}.head h1{margin:6px 0 4px;font-size:29px}.head p{margin:0;color:#d8d5ee}.sec{padding:26px 34px;border-bottom:1px solid var(--line)}h2{margin:0 0 6px;font-size:21px}.desc{margin:0 0 15px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(8,1fr);gap:9px}.card{padding:13px;border:1px solid var(--line);border-radius:11px;background:#fff}.card b{display:block;font-size:21px;color:var(--brand)}.card span{font-size:11px;color:var(--muted)}.table{overflow:auto;border:1px solid var(--line);border-radius:11px}.daily-wrap{max-height:740px}.daily-wrap thead{position:sticky;top:0;z-index:3}table{width:100%;border-collapse:collapse}th{padding:10px;background:var(--navy);color:#fff;text-align:left;font-size:11px;white-space:nowrap}td{padding:9px;border-top:1px solid var(--line);white-space:nowrap;vertical-align:top}.total td{background:var(--navy);color:#fff;font-weight:700}.period-total td,.day-total td{background:#f1efff;font-weight:700}.direct td{background:var(--bluebg)}.danger td{background:var(--redbg)}.fact{width:76px;padding:7px;border:1px solid #c8cedd;border-radius:7px;background:#fff}.week-fact{width:78px;padding:7px;border:1px solid #c8cedd;border-radius:7px;background:#fff}.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}.control{display:flex;flex-direction:column;gap:4px}.control label{font-size:11px;color:var(--muted);font-weight:700}.control select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}.alert{margin-top:13px;padding:13px 15px;border-radius:10px;border-left:4px solid}.alert b{display:block}.green{background:var(--greenbg);border-color:var(--green);color:var(--green)}.amber{background:var(--amberbg);border-color:#e49a31;color:var(--amber)}.red{background:var(--redbg);border-color:var(--red);color:var(--red)}.blue{background:var(--bluebg);border-color:var(--brand);color:#32276f}.good{color:var(--green);font-weight:700}.warn{color:var(--amber);font-weight:700}.bad{color:var(--red);font-weight:700}.neutral{color:var(--muted)}.progress{height:7px;background:#eceef4;border-radius:8px;overflow:hidden;min-width:90px}.progress i{display:block;height:100%;background:var(--brand)}.legend{font-size:12px;color:var(--muted);margin-top:8px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.box{border:1px solid var(--line);border-radius:11px;padding:14px}.box b{display:block;margin-bottom:3px}.check td{white-space:normal;vertical-align:middle}.check input{width:18px;height:18px}.foot{margin:26px 34px;padding:18px;border-radius:12px;background:var(--navy);color:#fff}@media(max-width:1050px){.cards{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.cards,.grid{grid-template-columns:1fr 1fr}.sec,.head{padding:22px 18px}}@media(max-width:480px){.cards,.grid{grid-template-columns:1fr}}@media print{body{background:#fff}.doc{max-width:none}.daily-wrap{max-height:none;overflow:visible}.controls{display:none}}
-.nav{position:sticky;top:0;z-index:20;display:flex;gap:7px;align-items:center;padding:10px 34px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);overflow:auto;backdrop-filter:blur(8px)}.nav a,.nav button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;color:var(--ink);font-weight:700;font-size:12px;white-space:nowrap;text-decoration:none;cursor:pointer}.nav a:hover,.nav button:hover{border-color:var(--brand);color:var(--brand)}.nav .primary{background:var(--brand);border-color:var(--brand);color:#fff}.command{background:linear-gradient(180deg,#f7f5ff 0,#fff 100%)}.command-top{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:14px}.command-top p{margin:3px 0 0;color:var(--muted)}.mode-pill{padding:7px 10px;border-radius:999px;background:var(--greenbg);color:var(--green);font-weight:700;font-size:12px}.sprint-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.sprint-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;box-shadow:0 7px 24px rgba(40,31,96,.06)}.sprint-card.active{border:2px solid var(--brand);box-shadow:0 8px 28px rgba(91,76,226,.15)}.sprint-card .sprint-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.sprint-card h3{margin:0;font-size:16px}.sprint-card .date{font-size:11px;color:var(--muted)}.sprint-main{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.metric{padding:9px;border-radius:9px;background:#f7f8fb}.metric b{display:block;font-size:18px}.metric span{font-size:10px;color:var(--muted)}.split{display:flex;height:8px;border-radius:8px;overflow:hidden;background:#eee;margin:8px 0}.split i:nth-child(1){background:#8b5cf6}.split i:nth-child(2){background:#38bdf8}.split i:nth-child(3){background:#94a3b8}.channel-line{display:flex;justify-content:space-between;gap:10px;font-size:12px}.efficiency{margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}.eff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}.eff-grid span{padding:6px;border-radius:7px;background:#f7f8fb;font-size:10px;color:var(--muted)}.eff-grid b{display:block;font-size:13px;color:var(--ink)}.sync-state{margin-left:auto;font-size:11px;color:var(--muted);white-space:nowrap}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.action-card{padding:14px;border-radius:12px;border:1px solid var(--line);background:#fff}.action-card b{display:block;margin-bottom:5px}.action-card ul{margin:7px 0 0;padding-left:18px;color:var(--muted)}.section-toggle{float:right;border:0;background:#f1efff;color:var(--brand);padding:6px 9px;border-radius:8px;font-weight:700;cursor:pointer}.sec.is-collapsed>:not(h2){display:none}.compact-mode .secondary{display:none}.compact-mode .foot{display:none}@media(max-width:900px){.sprint-cards{grid-template-columns:1fr 1fr}.actions{grid-template-columns:1fr}.nav{padding:9px 18px}}@media(max-width:560px){.sprint-cards{grid-template-columns:1fr}.sprint-main{grid-template-columns:1fr 1fr}.command-top{display:block}.mode-pill{display:inline-block;margin-top:8px}.eff-grid{grid-template-columns:1fr 1fr}}
+.nav{position:sticky;top:0;z-index:20;display:flex;gap:7px;align-items:center;padding:10px 34px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);overflow:auto;backdrop-filter:blur(8px)}.nav a,.nav button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;color:var(--ink);font-weight:700;font-size:12px;white-space:nowrap;text-decoration:none;cursor:pointer}.nav a:hover,.nav button:hover{border-color:var(--brand);color:var(--brand)}.nav .primary{background:var(--brand);border-color:var(--brand);color:#fff}.command{background:linear-gradient(180deg,#f7f5ff 0,#fff 100%)}.command-top{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:14px}.command-top p{margin:3px 0 0;color:var(--muted)}.mode-pill{padding:7px 10px;border-radius:999px;background:var(--greenbg);color:var(--green);font-weight:700;font-size:12px}.quick-panels{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:14px}.quick-panel{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;box-shadow:0 7px 24px rgba(40,31,96,.06)}.quick-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.quick-head h3{margin:0;font-size:16px}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:11px}.quick-kpi{padding:9px;border-radius:9px;background:#f7f8fb}.quick-kpi b{display:block;font-size:18px}.quick-kpi span{font-size:10px;color:var(--muted)}.pulse-bar{height:9px;background:#eceef4;border-radius:9px;overflow:hidden;margin:11px 0 7px}.pulse-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#35b779);transition:width .25s}.pulse-text{margin:0;color:var(--muted);font-size:12px}.sprint-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.sprint-card{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff;box-shadow:0 7px 24px rgba(40,31,96,.06)}.sprint-card.active{border:2px solid var(--brand);box-shadow:0 8px 28px rgba(91,76,226,.15)}.sprint-card .sprint-head{display:flex;justify-content:space-between;gap:8px;align-items:center}.sprint-card h3{margin:0;font-size:16px}.sprint-card .date{font-size:11px;color:var(--muted)}.sprint-main{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.metric{padding:9px;border-radius:9px;background:#f7f8fb}.metric b{display:block;font-size:18px}.metric span{font-size:10px;color:var(--muted)}.split{display:flex;height:8px;border-radius:8px;overflow:hidden;background:#eee;margin:8px 0}.split i:nth-child(1){background:#8b5cf6}.split i:nth-child(2){background:#38bdf8}.split i:nth-child(3){background:#94a3b8}.channel-line{display:flex;justify-content:space-between;gap:10px;font-size:12px}.efficiency{margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}.eff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}.eff-grid span{padding:6px;border-radius:7px;background:#f7f8fb;font-size:10px;color:var(--muted)}.eff-grid b{display:block;font-size:13px;color:var(--ink)}.sync-state{margin-left:auto;font-size:11px;color:var(--muted);white-space:nowrap}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.action-card{padding:14px;border-radius:12px;border:1px solid var(--line);background:#fff}.action-card b{display:block;margin-bottom:5px}.action-card ul{margin:7px 0 0;padding-left:18px;color:var(--muted)}.section-toggle{float:right;border:0;background:#f1efff;color:var(--brand);padding:6px 9px;border-radius:8px;font-weight:700;cursor:pointer}.sec.is-collapsed>:not(h2){display:none}.compact-mode .secondary{display:none}.compact-mode .foot{display:none}@media(max-width:900px){.sprint-cards{grid-template-columns:1fr 1fr}.quick-panels,.actions{grid-template-columns:1fr}.nav{padding:9px 18px}}@media(max-width:560px){.sprint-cards{grid-template-columns:1fr}.sprint-main{grid-template-columns:1fr 1fr}.quick-grid{grid-template-columns:1fr 1fr}.command-top{display:block}.mode-pill{display:inline-block;margin-top:8px}.eff-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body><main class="doc">
@@ -33,9 +33,14 @@
 <div><h2>Операционный штаб маркетинга</h2><p>Один экран для решения: сколько лидов нужно, откуда они придут и какой бюджет открывать.</p></div>
 <span class="mode-pill">CPL Директа фиксирован: 700 ₽</span>
 </div>
+<div class="quick-panels">
+<article class="quick-panel"><div class="quick-head"><h3>Результат за вчера</h3><span class="date" id="yesterdayDate">—</span></div><div class="quick-grid"><div class="quick-kpi"><b id="yesterdayLeads">—</b><span>лиды план / факт</span></div><div class="quick-kpi"><b id="yesterdaySales">—</b><span>продажи факт</span></div><div class="quick-kpi"><b id="yesterdayBad">—</b><span>некачество</span></div><div class="quick-kpi"><b id="yesterdayStatus">—</b><span>итог дня</span></div></div></article>
+<article class="quick-panel"><div class="quick-head"><h3>Пульс маркетинга</h3><span class="mode-pill" id="pulseStatus">—</span></div><div class="quick-grid"><div class="quick-kpi"><b id="pulsePlan">—</b><span>план к дате</span></div><div class="quick-kpi"><b id="pulseFact">—</b><span>факт к дате</span></div><div class="quick-kpi"><b id="pulseDelta">—</b><span>отклонение</span></div><div class="quick-kpi"><b id="pulseNeededDay">—</b><span>нужно в день дальше</span></div></div><div class="pulse-bar"><i id="pulseFill" style="width:0"></i></div><p class="pulse-text" id="pulseText">Ожидаю данные Б24.</p></article>
+</div>
 <div class="sprint-cards" id="sprintCards"></div>
 <div class="actions">
-<div class="action-card"><b>Яндекс Директ · разгон объёма</b><ul><li>Увеличивать только количество лидов: 20 → 45 → 100 → 220 → 400 → 600.</li><li>Недельный бюджет = лиды × 700 ₽.</li><li>Не открывать следующий объём при некачественных выше 40%.</li></ul></div>
+<div class="action-card"><b>Яндекс Директ · разгон объёма</b><ul><li>Увеличивать количество лидов: 75 → 135 → 240 → 360 → 540 → 671.</li><li>Недельный бюджет = лиды × 700 ₽.</li><li>Не открывать следующий объём при некачественных выше 40%.</li></ul></div>
+<div class="action-card"><b>Telegram · стабильный поток</b><ul><li>План: 63 → 113 → 200 → 300 → 450 → 559 лидов.</li><li>Ежедневно отслеживать заявку, некачество и конверсию в Б24.</li><li>Недобор переносится в следующий спринт автоматически.</li></ul></div>
 <div class="action-card"><b>Инфлюенс · рост заявок и снижение цены</b><ul><li>Каждому блогеру — отдельная кампания «никнейм + месяц + год».</li><li>Сравнивать стоимость лида и некач через 48 часов после размещения.</li><li>Повторять только связки с подтверждённым качеством в Б24.</li></ul></div>
 </div>
 </section>
@@ -45,17 +50,17 @@
 <p class="desc">Маркетинг обеспечивает 1 850 новых продаж. 820 старых продаж относятся к бесплатной реактивации ОП и в рекламный результат не включаются.</p>
 <div class="cards">
 <div class="card"><b>1 850</b><span>новых продаж</span></div>
-<div class="card"><b>6 735</b><span>валовых лидов</span></div>
-<div class="card"><b>3 126 425 ₽</b><span>базовый бюджет</span></div>
+<div class="card"><b>6 738</b><span>валовых лидов</span></div>
+<div class="card"><b>3 148 795 ₽</b><span>базовый бюджет</span></div>
 <div class="card"><b>9,6% → 35%</b><span>рост конверсии</span></div>
 <div class="card"><b id="factLeads">0</b><span>лидов факт</span></div>
 <div class="card"><b id="factSales">0</b><span>продаж факт</span></div>
 <div class="card"><b id="factSpend">0 ₽</b><span>расход факт</span></div>
-<div class="card"><b id="remainLeads">6 735</b><span>лидов осталось</span></div>
+<div class="card"><b id="remainLeads">6 738</b><span>лидов осталось</span></div>
 </div>
 <div class="cards" style="margin-top:9px">
 <div class="card"><b id="remainSales">1 850</b><span>продаж осталось</span></div>
-<div class="card"><b id="remainBudget">3 126 425 ₽</b><span>бюджет остался</span></div>
+<div class="card"><b id="remainBudget">3 148 795 ₽</b><span>бюджет остался</span></div>
 <div class="card"><b id="nextDayLeads">—</b><span>лидов ближайшего дня</span></div>
 <div class="card"><b id="nextDayBudget">—</b><span>бюджет ближайшего дня</span></div>
 <div class="card"><b id="nextDayDate">—</b><span>ближайшая дата</span></div>
@@ -86,7 +91,7 @@
 </section>
 
 <section class="sec">
-<h2>Ежедневный план / факт — все дни и оба канала</h2>
+<h2>Ежедневный план / факт — все дни и каналы</h2>
 <p class="desc">Все предыдущие дни остаются видимыми. После ввода факта план этого дня фиксируется, а разница распределяется по оставшимся дням текущего спринта.</p>
 <div class="controls">
 <div class="control"><label for="sprintFilter">Показать спринт</label><select id="sprintFilter"><option value="all">Все спринты</option></select></div>
@@ -98,9 +103,9 @@
 
 <section class="sec">
 <h2>Каналы, объём и бюджет</h2>
-<p class="desc">Вебинары, WA / Telegram, звонки и CRM-формы исключены. Платный поток состоит только из инфлюенса и Яндекс Директа.</p>
+<p class="desc">Вебинары, WA, звонки и CRM-формы исключены. Плановые каналы: Яндекс Директ, Telegram и инфлюенс. Всё остальное фиксируется в категории «Прочие источники».</p>
 <div class="table"><table><thead><tr><th>Канал</th><th>Доля лидов</th><th>Лиды план / факт</th><th>CPL цель / факт</th><th>Продажи план / факт</th><th>Конверсия факт</th><th>Некач. факт</th><th>Бюджет план / факт</th><th>Решение</th></tr></thead><tbody id="channelRows"></tbody></table></div>
-<div class="alert amber"><b>Яндекс Директ</b>CPL фиксирован на уровне 700 ₽ во всех спринтах. Раскачка строится только по количеству лидов: 20 → 45 → 100 → 220 → 400 → 600. Недельный бюджет автоматически равен объёму лидов × 700 ₽.</div>
+<div class="alert amber"><b>Яндекс Директ</b>CPL фиксирован на уровне 700 ₽ во всех спринтах. Раскачка строится только по количеству лидов: 75 → 135 → 240 → 360 → 540 → 671. Недельный бюджет автоматически равен объёму лидов × 700 ₽.</div>
 </section>
 
 <section class="sec">
@@ -161,8 +166,9 @@ const periods=[
  {name:'Спринт 6',label:'24–29.08',start:'2026-08-24',end:'2026-08-29',sales:783,conv:.35,bad:.26,weights:[.78,.86,.94,1.02,1.13,1.27]}
 ];
 const channels=[
- {name:'Инфлюенс / блогеры',short:'Инфлюенс',cpl:[650,560,480,420,370,315],leads:[230,405,700,980,1400,1635],sales:[22,57,133,235,420,573]},
- {name:'Яндекс Директ',short:'Яндекс',cpl:700,leads:[20,45,100,220,400,600],sales:[2,6,19,53,120,210]},
+ {name:'Инфлюенс / блогеры',short:'Инфлюенс',cpl:[650,560,480,420,370,315],leads:[113,203,360,540,810,1006],sales:[11,28,68,130,243,352]},
+ {name:'Яндекс Директ',short:'Яндекс',cpl:700,leads:[75,135,240,360,540,671],sales:[7,19,46,86,162,235]},
+ {name:'Telegram',short:'Telegram',cpl:315,leads:[63,113,200,300,450,559],sales:[6,16,38,72,135,196]},
  {name:'Прочие источники',short:'Прочие',cpl:0,leads:[0,0,0,0,0,0],sales:[0,0,0,0,0,0],factOnly:true}
 ];
 const factKey='sharhMarketingDailyV4',weekKey='sharhMarketingWeekV4',lockKey='sharhMarketingLocksV5',gateKey='sharhMarketingGatesV4';
@@ -175,14 +181,16 @@ const cplAt=(c,pi)=>Array.isArray(c.cpl)?c.cpl[pi]:c.cpl;
 const PLAN_LEADS=channels.reduce((s,c)=>s+c.leads.reduce((a,b)=>a+b,0),0);
 const PLAN_SALES=channels.reduce((s,c)=>s+c.sales.reduce((a,b)=>a+b,0),0);
 const PLAN_BUDGET=channels.reduce((s,c)=>s+c.leads.reduce((a,b,pi)=>a+b*cplAt(c,pi),0),0);
+const todayISO=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Moscow'}).format(new Date());
+const shiftDate=(value,days)=>{const d=new Date(value+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+days);return d.toISOString().slice(0,10)};
 function renderCommandCenter(){
  const host=document.getElementById('sprintCards');if(!host)return;
- const today='2026-07-27';
+ const today=todayISO();
  host.innerHTML=periods.map((p,pi)=>{
-  const leadTotal=channels.reduce((s,c)=>s+c.leads[pi],0),budget=channels.reduce((s,c)=>s+c.leads[pi]*cplAt(c,pi),0),days=dates(p.start,p.end).length,inf=channels[0].leads[pi],direct=channels[1].leads[pi],other=channels[2].leads[pi],active=today>=p.start&&today<=p.end;
+  const leadTotal=channels.reduce((s,c)=>s+c.leads[pi],0),budget=channels.reduce((s,c)=>s+c.leads[pi]*cplAt(c,pi),0),days=dates(p.start,p.end).length,inf=channels[0].leads[pi],direct=channels[1].leads[pi],telegram=channels[2].leads[pi],other=channels[3].leads[pi],active=today>=p.start&&today<=p.end;
   const factLeads=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'leads'),0),factBad=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'bad'),0),factSales=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'sales'),0),factSpend=channels.reduce((s,c,ci)=>s+recognized(pi,ci,'spend'),0),hasFact=channels.some((c,ci)=>effectiveWeekFact(pi,ci,'leads')!==null),completion=leadTotal?factLeads/leadTotal:0,badRate=factLeads?factBad/factLeads:0,conv=factLeads?factSales/factLeads:0,cpl=factLeads?factSpend/factLeads:0;
   const verdict=!hasFact?'<span class="neutral">ожидает данные</span>':badRate>.40?'<span class="bad">остановить и исправить качество</span>':completion<.9?'<span class="warn">усилить объём</span>':conv<p.conv*.9?'<span class="warn">оптимизировать конверсию</span>':'<span class="good">масштабировать</span>';
-  return `<article class="sprint-card ${active?'active':''}"><div class="sprint-head"><div><h3>${p.name}</h3><span class="date">${p.label}</span></div>${active?'<span class="mode-pill">текущий</span>':''}</div><div class="sprint-main"><div class="metric"><b>${fmt(leadTotal)}</b><span>лидов за спринт</span></div><div class="metric"><b>${fmt(Math.ceil(leadTotal/days))}</b><span>в среднем в день</span></div><div class="metric"><b>${money(budget)}</b><span>бюджет</span></div></div><div class="channel-line"><span>Инфлюенс ${fmt(inf)}</span><span>Директ ${fmt(direct)}</span><span>Прочие ${fmt(other)}</span></div><div class="split"><i style="width:${inf/leadTotal*100}%"></i><i style="width:${direct/leadTotal*100}%"></i><i style="width:${leadTotal?other/leadTotal*100:0}%"></i></div><div class="channel-line"><span>Продажи ${p.sales}</span><span>Конв. ${pct(p.sales,leadTotal)}</span><span>Некач ≤${Math.round(p.bad*100)}%</span></div><div class="efficiency"><b>Эффективность: ${verdict}</b><div class="eff-grid"><span><b>${pct(factLeads,leadTotal)}</b>план лидов</span><span><b>${factLeads?pct(factBad,factLeads):'—'}</b>некач</span><span><b>${factLeads?pct(factSales,factLeads):'—'}</b>конверсия</span><span><b>${factLeads&&factSpend?money(cpl):'—'}</b>CPL факт</span></div></div></article>`
+  return `<article class="sprint-card ${active?'active':''}"><div class="sprint-head"><div><h3>${p.name}</h3><span class="date">${p.label}</span></div>${active?'<span class="mode-pill">текущий</span>':''}</div><div class="sprint-main"><div class="metric"><b>${fmt(leadTotal)}</b><span>лидов за спринт</span></div><div class="metric"><b>${fmt(Math.ceil(leadTotal/days))}</b><span>в среднем в день</span></div><div class="metric"><b>${money(budget)}</b><span>бюджет</span></div></div><div class="channel-line"><span>Директ ${fmt(direct)}</span><span>Telegram ${fmt(telegram)}</span><span>Инфлюенс ${fmt(inf)}</span><span>Прочие ${fmt(other)}</span></div><div class="split"><i style="width:${direct/leadTotal*100}%"></i><i style="width:${telegram/leadTotal*100}%"></i><i style="width:${inf/leadTotal*100}%"></i><i style="width:${leadTotal?other/leadTotal*100:0}%"></i></div><div class="channel-line"><span>Продажи ${p.sales}</span><span>Конв. ${pct(p.sales,leadTotal)}</span><span>Некач ≤${Math.round(p.bad*100)}%</span></div><div class="efficiency"><b>Эффективность: ${verdict}</b><div class="eff-grid"><span><b>${pct(factLeads,leadTotal)}</b>план лидов</span><span><b>${factLeads?pct(factBad,factLeads):'—'}</b>некач</span><span><b>${factLeads?pct(factSales,factLeads):'—'}</b>конверсия</span><span><b>${factLeads&&factSpend?money(cpl):'—'}</b>CPL факт</span></div></div></article>`
  }).join('')
 }
 async function syncFromB24(){
@@ -191,8 +199,12 @@ async function syncFromB24(){
  try{
   const response=await fetch(`./marketing-b24.json?t=${Date.now()}`,{cache:'no-store'});if(!response.ok)throw new Error('sync');
   const data=await response.json();
-  (data.channels||[]).forEach((channel,ci)=>{(channel.weeks||[]).forEach((w,pi)=>{['leads','bad','sales'].forEach(c=>{weekFacts[wkey(pi,ci,c)]=Math.max(0,Number(w[c])||0)})})});
-  localStorage.setItem(weekKey,JSON.stringify(weekFacts));state.textContent=`обновлено из Б24: ${new Date(data.updatedAt).toLocaleString('ru-RU')}`;renderAll()
+  const today=todayISO();
+  (data.channels||[]).forEach((channel,ci)=>{
+   Object.entries(channel.days||{}).forEach(([date,row])=>{if(date>=today)return;['leads','bad','sales'].forEach(c=>{facts[key(date,ci,c)]=Math.max(0,Number(row[c])||0)})});
+   (channel.weeks||[]).forEach((w,pi)=>{['leads','bad','sales'].forEach(c=>{const k=wkey(pi,ci,c);if(periods[pi].end<today)weekFacts[k]=Math.max(0,Number(w[c])||0);else delete weekFacts[k]})})
+  });
+  localStorage.setItem(factKey,JSON.stringify(facts));localStorage.setItem(weekKey,JSON.stringify(weekFacts));state.textContent=`обновлено из Б24: ${new Date(data.updatedAt).toLocaleString('ru-RU')}`;renderAll()
  }catch(e){state.textContent=location.protocol==='file:'?'автообновление работает на опубликованном сайте':'не удалось получить данные Б24'}
  finally{btn.disabled=false}
 }
@@ -232,6 +244,33 @@ function recognized(pi,ci,c){const eff=effectiveWeekFact(pi,ci,c);return eff===n
 function recognizedTotals(){
  let leads=0,spend=0,bad=0,sales=0;periods.forEach((p,pi)=>channels.forEach((c,ci)=>{leads+=recognized(pi,ci,'leads');spend+=recognized(pi,ci,'spend');bad+=recognized(pi,ci,'bad');sales+=recognized(pi,ci,'sales')}));
  return{leads,spend,bad,sales}
+}
+function renderQuickPanels(){
+ const today=todayISO(),yesterday=shiftDate(today,-1),allDates=periods.flatMap(p=>dates(p.start,p.end)),pastDates=allDates.filter(d=>d<today),futureDates=allDates.filter(d=>d>=today);
+ let yPlan=0,yLeads=0,yBad=0,ySales=0,yFilled=false,planToDate=0,factToDate=0;
+ channels.forEach((c,ci)=>{
+  const row=baseDaily[`${yesterday}|${ci}`];if(row)yPlan+=row.leads;
+  if(has(yesterday,ci,'leads'))yFilled=true;
+  yLeads+=val(yesterday,ci,'leads');yBad+=val(yesterday,ci,'bad');ySales+=val(yesterday,ci,'sales');
+  pastDates.forEach(d=>{planToDate+=baseDaily[`${d}|${ci}`]?.leads||0;factToDate+=val(d,ci,'leads')})
+ });
+ const yDelta=yLeads-yPlan,yBadRate=yLeads?yBad/yLeads:0;
+ document.getElementById('yesterdayDate').textContent=`${yesterday.slice(8,10)}.${yesterday.slice(5,7)}`;
+ document.getElementById('yesterdayLeads').textContent=yFilled?`${fmt(yPlan)} / ${fmt(yLeads)}`:`${fmt(yPlan)} / —`;
+ document.getElementById('yesterdaySales').textContent=yFilled?fmt(ySales):'—';
+ document.getElementById('yesterdayBad').textContent=yFilled?pct(yBad,yLeads):'—';
+ const yStatus=document.getElementById('yesterdayStatus');
+ if(!yFilled){yStatus.textContent='нет данных';yStatus.className='neutral'}
+ else if(yBadRate>.40){yStatus.textContent='стоп';yStatus.className='bad'}
+ else if(yDelta<0){yStatus.textContent=fmt(yDelta);yStatus.className='bad'}
+ else{yStatus.textContent=`+${fmt(yDelta)}`;yStatus.className='good'}
+ const delta=factToDate-planToDate,remaining=Math.max(0,PLAN_LEADS-factToDate),needed=futureDates.length?Math.ceil(remaining/futureDates.length):0,pace=planToDate?factToDate/planToDate:1,completion=Math.min(100,Math.round(factToDate/PLAN_LEADS*100));
+ document.getElementById('pulsePlan').textContent=fmt(planToDate);document.getElementById('pulseFact').textContent=fmt(factToDate);document.getElementById('pulseDelta').textContent=`${delta>=0?'+':''}${fmt(delta)}`;document.getElementById('pulseDelta').className=delta>=0?'good':'bad';document.getElementById('pulseNeededDay').textContent=fmt(needed);document.getElementById('pulseFill').style.width=`${completion}%`;
+ const pulse=document.getElementById('pulseStatus');
+ if(pace>=1){pulse.textContent='по плану';pulse.style.background='var(--greenbg)';pulse.style.color='var(--green)'}
+ else if(pace>=.9){pulse.textContent='внимание';pulse.style.background='var(--amberbg)';pulse.style.color='var(--amber)'}
+ else{pulse.textContent='риск';pulse.style.background='var(--redbg)';pulse.style.color='var(--red)'}
+ document.getElementById('pulseText').textContent=delta>=0?`Опережение ${fmt(delta)} лидов. Осталось ${fmt(remaining)}; средний темп до 29.08 — ${fmt(needed)} в день.`:`Отставание ${fmt(Math.abs(delta))} лидов. После закрытия спринта недобор автоматически добавится к следующему; требуемый темп до 29.08 — ${fmt(needed)} в день.`
 }
 function statusFor(planLeads,leads,spend,bad,sales,cpl,targetConv,badLimit,closed){
  if(!closed)return'<span class="neutral">спринт не закрыт</span>';
@@ -297,9 +336,9 @@ channels.forEach((c,ci)=>channelFilter.insertAdjacentHTML('beforeend',`<option v
 sprintFilter.addEventListener('change',renderDaily);channelFilter.addEventListener('change',renderDaily);
 document.querySelectorAll('.gate').forEach(x=>{x.checked=!!gates[x.dataset.k];x.addEventListener('change',e=>{gates[e.target.dataset.k]=e.target.checked;localStorage.setItem(gateKey,JSON.stringify(gates))})});
 document.getElementById('syncB24')?.addEventListener('click',syncFromB24);
-function renderAll(){renderCommandCenter();renderCards();renderSprints();renderDaily();renderChannels();renderMonthly()}
+function renderAll(){renderCommandCenter();renderQuickPanels();renderCards();renderSprints();renderDaily();renderChannels();renderMonthly()}
 prepareSimpleView();
-const currentSprint=periods.findIndex(p=>'2026-07-27'>=p.start&&'2026-07-27'<=p.end);if(currentSprint>=0)sprintFilter.value=String(currentSprint);
+const currentSprint=periods.findIndex(p=>todayISO()>=p.start&&todayISO()<=p.end);if(currentSprint>=0)sprintFilter.value=String(currentSprint);
 renderAll();
 if(location.protocol!=='file:')syncFromB24();
 })();

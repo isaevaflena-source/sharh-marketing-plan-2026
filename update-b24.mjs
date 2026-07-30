@@ -41,11 +41,21 @@ for (let start = 50; start < total; start += 50) {
   leads.push(...(next.result || []));
 }
 
+const dateRange = (start, end) => {
+  const result = [];
+  for (let date = new Date(`${start}T00:00:00Z`), last = new Date(`${end}T00:00:00Z`); date <= last; date.setUTCDate(date.getUTCDate() + 1)) {
+    result.push(date.toISOString().slice(0, 10));
+  }
+  return result;
+};
+const allDates = periods.flatMap(([start, end]) => dateRange(start, end));
 const emptyWeeks = () => periods.map(() => ({leads: 0, bad: 0, sales: 0}));
+const emptyDays = () => Object.fromEntries(allDates.map(date => [date, {leads: 0, bad: 0, sales: 0}]));
 const channels = [
-  {key: "influencer", weeks: emptyWeeks()},
-  {key: "direct", weeks: emptyWeeks()},
-  {key: "other", weeks: emptyWeeks()}
+  {key: "influencer", weeks: emptyWeeks(), days: emptyDays()},
+  {key: "direct", weeks: emptyWeeks(), days: emptyDays()},
+  {key: "telegram", weeks: emptyWeeks(), days: emptyDays()},
+  {key: "other", weeks: emptyWeeks(), days: emptyDays()}
 ];
 const classify = lead => {
   const source = (lead.SOURCE_ID || "").toLowerCase();
@@ -53,7 +63,8 @@ const classify = lead => {
   const medium = (lead.UTM_MEDIUM || "").toLowerCase();
   if (medium.includes("influencer") || medium.includes("public") || source === bloggerSource) return 0;
   if (utmSource.includes("yandex") || medium === "cpc" || medium === "cpa") return 1;
-  return 2;
+  if (source.includes("telegram") || source === "tg" || utmSource.includes("telegram") || utmSource === "tg" || medium.includes("telegram") || medium === "tg") return 2;
+  return 3;
 };
 const hasBadReason = value => Array.isArray(value) ? value.length > 0 : Boolean(value);
 
@@ -61,10 +72,19 @@ for (const lead of leads) {
   const date = lead.DATE_CREATE?.slice(0, 10);
   const pi = periods.findIndex(([start, end]) => date >= start && date <= end);
   if (pi < 0) continue;
-  const target = channels[classify(lead)].weeks[pi];
+  const channel = channels[classify(lead)];
+  const target = channel.weeks[pi];
+  const daily = channel.days[date];
   target.leads += 1;
-  if (badStatuses.has(lead.STATUS_ID || "") || hasBadReason(lead.UF_CRM_1734944627)) target.bad += 1;
-  if ((lead.STATUS_ID || "") === "CONVERTED") target.sales += 1;
+  daily.leads += 1;
+  if (badStatuses.has(lead.STATUS_ID || "") || hasBadReason(lead.UF_CRM_1734944627)) {
+    target.bad += 1;
+    daily.bad += 1;
+  }
+  if ((lead.STATUS_ID || "") === "CONVERTED") {
+    target.sales += 1;
+    daily.sales += 1;
+  }
 }
 
 await writeFile("marketing-b24.json", JSON.stringify({
