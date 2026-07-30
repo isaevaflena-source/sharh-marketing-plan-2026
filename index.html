@@ -1,4 +1,4 @@
-// Автообновление Б24 отключено — используйте кнопку «Обновить из Б24».
+
 <html lang="ru">
 <head>
 <meta charset="utf-8">
@@ -340,7 +340,7 @@ function renderAll(){renderCommandCenter();renderQuickPanels();renderCards();ren
 prepareSimpleView();
 const currentSprint=periods.findIndex(p=>todayISO()>=p.start&&todayISO()<=p.end);if(currentSprint>=0)sprintFilter.value=String(currentSprint);
 renderAll();
-if(location.protocol!=='file:')syncFromB24();
+// Автообновление Б24 отключено — используйте кнопку «Обновить из Б24».
 })();
 </script>
 </main></body></html>
