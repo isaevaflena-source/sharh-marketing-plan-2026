@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-31T10:17:51.524Z",
+  "updatedAt": "2026-07-31T16:27:46.283Z",
   "source": "Bitrix24",
-  "totalLeads": 414,
+  "totalLeads": 461,
   "channels": [
     {
       "key": "influencer",
@@ -12,8 +12,8 @@
           "sales": 0
         },
         {
-          "leads": 3,
-          "bad": 3,
+          "leads": 5,
+          "bad": 4,
           "sales": 0
         },
         {
@@ -74,8 +74,8 @@
           "sales": 0
         },
         "2026-07-31": {
-          "leads": 0,
-          "bad": 0,
+          "leads": 2,
+          "bad": 1,
           "sales": 0
         },
         "2026-08-01": {
@@ -234,9 +234,9 @@
           "sales": 1
         },
         {
-          "leads": 13,
+          "leads": 16,
           "bad": 5,
-          "sales": 1
+          "sales": 5
         },
         {
           "leads": 0,
@@ -288,7 +288,7 @@
         "2026-07-29": {
           "leads": 3,
           "bad": 1,
-          "sales": 0
+          "sales": 1
         },
         "2026-07-30": {
           "leads": 1,
@@ -296,9 +296,9 @@
           "sales": 0
         },
         "2026-07-31": {
-          "leads": 2,
+          "leads": 5,
           "bad": 0,
-          "sales": 0
+          "sales": 3
         },
         "2026-08-01": {
           "leads": 0,
@@ -456,9 +456,9 @@
           "sales": 3
         },
         {
-          "leads": 17,
+          "leads": 18,
           "bad": 7,
-          "sales": 2
+          "sales": 3
         },
         {
           "leads": 0,
@@ -518,9 +518,9 @@
           "sales": 0
         },
         "2026-07-31": {
-          "leads": 4,
+          "leads": 5,
           "bad": 2,
-          "sales": 0
+          "sales": 1
         },
         "2026-08-01": {
           "leads": 0,
@@ -674,13 +674,13 @@
       "weeks": [
         {
           "leads": 126,
-          "bad": 36,
+          "bad": 37,
           "sales": 21
         },
         {
-          "leads": 232,
-          "bad": 52,
-          "sales": 42
+          "leads": 273,
+          "bad": 60,
+          "sales": 50
         },
         {
           "leads": 0,
@@ -706,7 +706,7 @@
       "days": {
         "2026-07-24": {
           "leads": 43,
-          "bad": 15,
+          "bad": 16,
           "sales": 6
         },
         "2026-07-25": {
@@ -726,23 +726,23 @@
         },
         "2026-07-28": {
           "leads": 62,
-          "bad": 12,
+          "bad": 13,
           "sales": 13
         },
         "2026-07-29": {
           "leads": 54,
           "bad": 17,
-          "sales": 9
+          "sales": 10
         },
         "2026-07-30": {
           "leads": 51,
-          "bad": 6,
-          "sales": 11
+          "bad": 10,
+          "sales": 14
         },
         "2026-07-31": {
-          "leads": 16,
-          "bad": 2,
-          "sales": 2
+          "leads": 57,
+          "bad": 5,
+          "sales": 6
         },
         "2026-08-01": {
           "leads": 0,
