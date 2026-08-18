@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-18T14:05:18.407Z",
+  "updatedAt": "2026-08-18T15:51:11.437Z",
   "source": "Bitrix24",
-  "totalLeads": 2021,
+  "totalLeads": 2034,
   "channels": [
     {
       "key": "influencer",
@@ -27,7 +27,7 @@
           "sales": 0
         },
         {
-          "leads": 5,
+          "leads": 8,
           "bad": 0,
           "sales": 0
         },
@@ -164,7 +164,7 @@
           "sales": 0
         },
         "2026-08-18": {
-          "leads": 5,
+          "leads": 8,
           "bad": 0,
           "sales": 0
         },
@@ -471,7 +471,7 @@
           "sales": 5
         },
         {
-          "leads": 14,
+          "leads": 15,
           "bad": 5,
           "sales": 1
         },
@@ -608,7 +608,7 @@
           "sales": 0
         },
         "2026-08-18": {
-          "leads": 3,
+          "leads": 4,
           "bad": 0,
           "sales": 1
         },
@@ -690,11 +690,11 @@
         {
           "leads": 701,
           "bad": 271,
-          "sales": 95
+          "sales": 99
         },
         {
-          "leads": 181,
-          "bad": 30,
+          "leads": 190,
+          "bad": 34,
           "sales": 28
         },
         {
@@ -802,17 +802,17 @@
         "2026-08-12": {
           "leads": 82,
           "bad": 25,
-          "sales": 15
+          "sales": 16
         },
         "2026-08-13": {
           "leads": 109,
           "bad": 42,
-          "sales": 13
+          "sales": 14
         },
         "2026-08-14": {
           "leads": 88,
           "bad": 16,
-          "sales": 11
+          "sales": 12
         },
         "2026-08-15": {
           "leads": 80,
@@ -822,7 +822,7 @@
         "2026-08-16": {
           "leads": 57,
           "bad": 13,
-          "sales": 9
+          "sales": 10
         },
         "2026-08-17": {
           "leads": 118,
@@ -830,8 +830,8 @@
           "sales": 19
         },
         "2026-08-18": {
-          "leads": 63,
-          "bad": 9,
+          "leads": 72,
+          "bad": 13,
           "sales": 9
         },
         "2026-08-19": {
