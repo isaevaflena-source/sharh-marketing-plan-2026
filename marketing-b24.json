@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-19T08:04:46.945Z",
+  "updatedAt": "2026-08-19T09:54:35.132Z",
   "source": "Bitrix24",
-  "totalLeads": 2089,
+  "totalLeads": 2111,
   "channels": [
     {
       "key": "influencer",
@@ -250,7 +250,7 @@
         },
         {
           "leads": 10,
-          "bad": 2,
+          "bad": 3,
           "sales": 0
         },
         {
@@ -392,7 +392,7 @@
         },
         "2026-08-19": {
           "leads": 2,
-          "bad": 1,
+          "bad": 2,
           "sales": 0
         },
         "2026-08-20": {
@@ -693,9 +693,9 @@
           "sales": 103
         },
         {
-          "leads": 237,
-          "bad": 46,
-          "sales": 31
+          "leads": 259,
+          "bad": 47,
+          "sales": 32
         },
         {
           "leads": 0,
@@ -831,13 +831,13 @@
         },
         "2026-08-18": {
           "leads": 96,
-          "bad": 19,
+          "bad": 20,
           "sales": 10
         },
         "2026-08-19": {
-          "leads": 23,
+          "leads": 45,
           "bad": 1,
-          "sales": 1
+          "sales": 2
         },
         "2026-08-20": {
           "leads": 0,
