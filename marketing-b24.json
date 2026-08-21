@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-21T12:02:47.359Z",
+  "updatedAt": "2026-08-21T14:09:20.278Z",
   "source": "Bitrix24",
-  "totalLeads": 2358,
+  "totalLeads": 2380,
   "channels": [
     {
       "key": "influencer",
@@ -249,7 +249,7 @@
           "sales": 4
         },
         {
-          "leads": 18,
+          "leads": 19,
           "bad": 9,
           "sales": 2
         },
@@ -401,7 +401,7 @@
           "sales": 0
         },
         "2026-08-21": {
-          "leads": 0,
+          "leads": 1,
           "bad": 0,
           "sales": 0
         },
@@ -471,7 +471,7 @@
           "sales": 5
         },
         {
-          "leads": 24,
+          "leads": 25,
           "bad": 8,
           "sales": 3
         },
@@ -623,7 +623,7 @@
           "sales": 0
         },
         "2026-08-21": {
-          "leads": 3,
+          "leads": 4,
           "bad": 1,
           "sales": 0
         },
@@ -690,12 +690,12 @@
         {
           "leads": 701,
           "bad": 290,
-          "sales": 120
+          "sales": 121
         },
         {
-          "leads": 488,
-          "bad": 96,
-          "sales": 71
+          "leads": 508,
+          "bad": 103,
+          "sales": 80
         },
         {
           "leads": 0,
@@ -802,7 +802,7 @@
         "2026-08-12": {
           "leads": 82,
           "bad": 25,
-          "sales": 19
+          "sales": 20
         },
         "2026-08-13": {
           "leads": 109,
@@ -831,23 +831,23 @@
         },
         "2026-08-18": {
           "leads": 96,
-          "bad": 28,
-          "sales": 15
+          "bad": 29,
+          "sales": 16
         },
         "2026-08-19": {
           "leads": 101,
-          "bad": 16,
+          "bad": 17,
           "sales": 14
         },
         "2026-08-20": {
           "leads": 117,
-          "bad": 18,
-          "sales": 13
+          "bad": 20,
+          "sales": 15
         },
         "2026-08-21": {
-          "leads": 56,
-          "bad": 5,
-          "sales": 5
+          "leads": 76,
+          "bad": 8,
+          "sales": 11
         },
         "2026-08-22": {
           "leads": 0,
