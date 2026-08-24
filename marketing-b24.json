@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-24T03:36:58.561Z",
+  "updatedAt": "2026-08-24T05:55:53.882Z",
   "source": "Bitrix24",
-  "totalLeads": 2573,
+  "totalLeads": 2578,
   "channels": [
     {
       "key": "influencer",
@@ -698,7 +698,7 @@
           "sales": 124
         },
         {
-          "leads": 3,
+          "leads": 8,
           "bad": 0,
           "sales": 0
         }
@@ -860,7 +860,7 @@
           "sales": 7
         },
         "2026-08-24": {
-          "leads": 3,
+          "leads": 8,
           "bad": 0,
           "sales": 0
         },
