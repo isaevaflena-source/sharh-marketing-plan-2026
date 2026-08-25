@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-25T16:17:50.883Z",
+  "updatedAt": "2026-08-25T17:54:20.660Z",
   "source": "Bitrix24",
-  "totalLeads": 2785,
+  "totalLeads": 2792,
   "channels": [
     {
       "key": "influencer",
@@ -256,7 +256,7 @@
         {
           "leads": 4,
           "bad": 0,
-          "sales": 0
+          "sales": 1
         }
       ],
       "days": {
@@ -423,7 +423,7 @@
         "2026-08-25": {
           "leads": 4,
           "bad": 0,
-          "sales": 0
+          "sales": 1
         },
         "2026-08-26": {
           "leads": 0,
@@ -476,7 +476,7 @@
           "sales": 12
         },
         {
-          "leads": 18,
+          "leads": 19,
           "bad": 2,
           "sales": 4
         }
@@ -643,7 +643,7 @@
           "sales": 3
         },
         "2026-08-25": {
-          "leads": 7,
+          "leads": 8,
           "bad": 0,
           "sales": 1
         },
@@ -690,17 +690,17 @@
         {
           "leads": 701,
           "bad": 322,
-          "sales": 130
+          "sales": 131
         },
         {
           "leads": 670,
           "bad": 193,
-          "sales": 137
+          "sales": 138
         },
         {
-          "leads": 190,
-          "bad": 29,
-          "sales": 41
+          "leads": 196,
+          "bad": 30,
+          "sales": 44
         }
       ],
       "days": {
@@ -802,7 +802,7 @@
         "2026-08-12": {
           "leads": 82,
           "bad": 30,
-          "sales": 21
+          "sales": 22
         },
         "2026-08-13": {
           "leads": 109,
@@ -857,17 +857,17 @@
         "2026-08-23": {
           "leads": 73,
           "bad": 15,
-          "sales": 10
+          "sales": 11
         },
         "2026-08-24": {
           "leads": 84,
-          "bad": 14,
-          "sales": 15
+          "bad": 15,
+          "sales": 16
         },
         "2026-08-25": {
-          "leads": 106,
+          "leads": 112,
           "bad": 15,
-          "sales": 26
+          "sales": 28
         },
         "2026-08-26": {
           "leads": 0,
