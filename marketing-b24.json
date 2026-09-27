@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:12:27.162Z",
+  "updatedAt": "2026-09-27T19:16:37.156Z",
   "source": "Bitrix24",
   "totalLeads": 3221,
   "channels": [
@@ -700,7 +700,7 @@
         {
           "leads": 567,
           "bad": 227,
-          "sales": 158
+          "sales": 159
         }
       ],
       "days": {
@@ -867,7 +867,7 @@
         "2026-08-25": {
           "leads": 120,
           "bad": 39,
-          "sales": 39
+          "sales": 40
         },
         "2026-08-26": {
           "leads": 102,
